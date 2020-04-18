@@ -1,0 +1,37 @@
+._header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._header_list > .item {
+  margin: auto 30px !important;
+}
+._header_list {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+._header_right_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._login_button {
+  padding: 0.6rem 2.25rem !important;
+}
+._header_all {
+  padding: 1.5rem 0 !important;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  -webkit-box-shadow: 0 8px 5px -8px #999;
+  -moz-box-shadow: 0 8px 5px -8px #999;
+  box-shadow: 0 8px 5px -8px #999;
+  transition: all 0.5s;
+  z-index: 20;
+  background-color: white;
+}
