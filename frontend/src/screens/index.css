@@ -14,10 +14,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .default-color {
-  color: #5b5b5b !important;
+  color: #5f5f5f !important;
 }
 .header {
   font-size: 40px !important;
+}
+.large-title {
+  font-size: 24px !important;
 }
 .title {
   font-size: 20px !important;
@@ -32,7 +35,7 @@ body {
   font-size: 12px !important;
 }
 .shadow {
-  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16) !important;
+  box-shadow: 0 1.5px 3px 0px rgba(0, 0, 0, 0.16) !important;
 }
 .border-radius-sm {
   border-radius: 5px !important;
@@ -43,6 +46,9 @@ body {
 ._button {
   background-color: var(--primary) !important;
   color: white !important;
+}
+.bold {
+  font-weight: 900 !important;
 }
 .active-txt {
   color: var(--primary) !important;
@@ -63,4 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-col {
+  flex-direction: column;
 }
