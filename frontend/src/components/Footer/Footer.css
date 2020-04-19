@@ -13,3 +13,23 @@
 ._footer_navs a {
   margin: 0.25rem 0;
 }
+._footer_navs_list {
+  display: block;
+}
+._footer_navs_list.mobile {
+  display: none;
+}
+@media (max-width: 699px) {
+  ._footer_navs_list {
+    display: none !important;
+  }
+  ._footer_navs_list.mobile {
+    display: block !important;
+  }
+  ._footer_navs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -4,7 +4,6 @@ import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as MiniDots } from "../../assets/icons/miniDots.svg";
 import { ReactComponent as Toggle } from "../../assets/icons/toggle.svg";
-
 import SearchInput from "../SearchInput/SearchInput.jsx";
 import "./Header.css";
 

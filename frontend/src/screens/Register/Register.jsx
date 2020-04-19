@@ -1,7 +1,6 @@
 import React from "react";
 //?import components
 import FormRegister from "../../components/FormRegister/FormRegister.jsx";
-import Header from "../../components/Header/Header.jsx";
 //*import css
 import { Container, Grid, GridRow, GridColumn } from "semantic-ui-react";
 const Register = () => {

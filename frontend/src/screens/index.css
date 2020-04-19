@@ -101,3 +101,6 @@ p {
 .black-txt {
   color: #141414 !important;
 }
+.whitespace-no-wrap {
+  white-space: nowrap !important;
+}
