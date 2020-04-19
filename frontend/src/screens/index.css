@@ -13,6 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+p {
+  margin: 0;
+}
 .default-color {
   color: #5f5f5f !important;
 }
@@ -47,6 +50,16 @@ body {
   background-color: var(--primary) !important;
   color: white !important;
 }
+._button:hover,
+._primary_button:hover {
+  background-color: var(--primary-darker) !important;
+}
+._primary_button {
+  background-color: var(--primary) !important;
+  color: white !important;
+  padding: 1rem 4rem !important;
+  font-size: 16px !important;
+}
 .bold {
   font-weight: 900 !important;
 }
@@ -58,6 +71,12 @@ body {
 }
 ._margin_vertical {
   margin: 3rem 0 !important;
+}
+._margin_vertical_sm {
+  margin: 2rem 0 !important;
+}
+._margin_vertical_xs {
+  margin: 1rem 0 !important;
 }
 .pointer {
   cursor: pointer;
@@ -72,4 +91,13 @@ body {
 }
 .flex-col {
   flex-direction: column;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.black-txt {
+  color: #141414 !important;
 }

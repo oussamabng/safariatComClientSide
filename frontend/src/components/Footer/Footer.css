@@ -10,3 +10,6 @@
 ._footer_padding_sm {
   padding: 1rem 0 !important;
 }
+._footer_navs a {
+  margin: 0.25rem 0;
+}

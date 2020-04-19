@@ -11,7 +11,7 @@ const Footer = () => {
           <GridRow>
             <GridColumn className="_footer_padding">
               <a
-                href="#"
+                href="/temp"
                 className="_button title default-color _footer_button border-radius-bg bold shadow"
               >
                 join us{" "}
@@ -36,30 +36,50 @@ const Footer = () => {
         <Grid columns={3}>
           <GridRow className="_footer_padding">
             <GridColumn>
-              <div className="flex flex-col">
-                <p className="medium-text default-color bold">contact us</p>
-                <p className="small default-color">+213 (0) 777 59 53 56</p>
-                <p className="small default-color">+213 (0) 777 59 53 56</p>
-                <p className="small default-color">contact@Safariatcom.com</p>
-                <p className="small default-color">
+              <div className="flex flex-col _footer_navs">
+                <p className="medium-text default-color bold m-0">contact us</p>
+                <a href="/temp" className="small default-color">
+                  +213 (0) 777 59 53 56
+                </a>
+                <a href="/temp" className="small default-color">
+                  +213 (0) 777 59 53 56
+                </a>
+                <a href="/temp" className="small default-color">
+                  contact@Safariatcom.com
+                </a>
+                <a href="/temp" className="small default-color">
                   adress: neighberhood ,algeirs , algeria{" "}
-                </p>
+                </a>
               </div>
             </GridColumn>
             <GridColumn>
-              <div className="flex flex-col">
-                <p className="medium-text default-color bold">support</p>
-                <p className="small default-color">help & support</p>
-                <p className="small default-color">Trust & safety</p>
-                <p className="small default-color">Support@Safariatcom.com</p>
+              <div className="flex flex-col _footer_navs">
+                <p className="medium-text default-color bold m-0">support</p>
+                <a href="/temp" className="small default-color">
+                  help & support
+                </a>
+                <a href="/temp" className="small default-color">
+                  Trust & safety
+                </a>
+                <a href="/temp" className="small default-color">
+                  Support@Safariatcom.com
+                </a>
               </div>
             </GridColumn>
             <GridColumn>
-              <div className="flex flex-col">
-                <p className="medium-text default-color bold">more</p>
-                <p className="small default-color">Language</p>
-                <p className="small default-color">Privacy</p>
-                <p className="small default-color">terms & conditions</p>
+              <div className="flex flex-col _footer_navs">
+                <a href="/temp" className="medium-text default-color bold m-0">
+                  more
+                </a>
+                <a href="/temp" className="small default-color">
+                  Language
+                </a>
+                <a href="/temp" className="small default-color">
+                  Privacy
+                </a>
+                <a href="/temp" className="small default-color">
+                  terms & conditions
+                </a>
               </div>
             </GridColumn>
           </GridRow>

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "./Header.css";
 import { Container, List } from "semantic-ui-react";
-//*import icons
-import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
-import { ReactComponent as Toggle } from "../../assets/icons/toggle.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as MiniDots } from "../../assets/icons/miniDots.svg";
-//?import components
+import { ReactComponent as Toggle } from "../../assets/icons/toggle.svg";
+
 import SearchInput from "../SearchInput/SearchInput.jsx";
+import "./Header.css";
 
 const Header = (props) => {
   const [isSearch, setIsSearch] = useState(false);
@@ -15,12 +14,10 @@ const Header = (props) => {
     setIsSearch((prevState) => !prevState);
   };
   return (
-    <header className="_header_all">
+    <header className="_header_container">
       <Container>
-        <div className="_header_nav">
-          {/* logo */}
+        <div className="_header">
           <Logo className="_logo" />
-          {/* list of navs */}
           <List className="_header_list" horizontal>
             <List.Item>
               <a href="/" className="medium-text default-color active-txt">
@@ -92,10 +89,9 @@ const Header = (props) => {
               Login
             </a>
           </div>
-        </div>
-        {/* toggle div for mobile version */}
-        <div className="_header_toggle">
-          <Toggle onClick={props.show} />
+          <div className="_header_toggle">
+            <Toggle onClick={props.show} />
+          </div>
         </div>
       </Container>
     </header>
