@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.913" height="22.913" viewBox="0 0 20.913 22.913">
+  <defs>
+    <filter id="Ellipse_1" x="2.913" y="0" width="18" height="18" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ligne_2" x="0" y="11.716" width="10.827" height="11.197" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_5" data-name="Groupe 5" transform="translate(0.913 0.956)">
+    <g transform="matrix(1, 0, 0, 1, -0.91, -0.96)" filter="url(#Ellipse_1)">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" transform="translate(4.41 0.5)" fill="none" stroke="#707070" stroke-width="2.5">
+        <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+        <circle cx="7.5" cy="7.5" r="6.25" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -0.91, -0.96)" filter="url(#Ligne_2)">
+      <line id="Ligne_2-2" data-name="Ligne 2" y1="5.37" x2="5" transform="translate(2.91 13.63)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
