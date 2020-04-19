@@ -41,6 +41,10 @@
 ._logo {
   margin-bottom: 7px;
 }
+
+._header_right_part._header_search {
+  display: none !important;
+}
 @media (max-width: 1199px) {
   ._header_all > .ui.container {
     width: 100% !important;
@@ -70,5 +74,8 @@
   ._header_toggle {
     display: block !important;
     margin: 0rem 2rem !important;
+  }
+  ._header_search {
+    display: none !important;
   }
 }

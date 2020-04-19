@@ -44,6 +44,23 @@ body {
   background-color: var(--primary) !important;
   color: white !important;
 }
+.active-txt {
+  color: var(--primary) !important;
+}
 ._margin_horizontal {
   margin: 0 3rem !important;
+}
+._margin_vertical {
+  margin: 3rem 0 !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.no_margin {
+  margin: 0 !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
