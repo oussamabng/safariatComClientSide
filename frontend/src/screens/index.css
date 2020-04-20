@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "VisbyRoundCF-extrabold";
+  src: url("../fonts/VisbyRoundCF-ExtraBold.eot");
+}
+@font-face {
+  font-family: "VisbyRoundCF-bold";
+  src: url("../fonts/VisbyRoundCF-Bold.eot");
+}
+@font-face {
+  font-family: "VisbyRoundCF-regular";
+  src: url("../fonts/VisbyRoundCF-Regular.eot");
+}
 :root {
   --primary: #ffb808;
   --primary-darker: #f2b215;
@@ -12,12 +24,38 @@ body {
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+}
+.CF_extrabold {
+  font-family: "VisbyRoundCF-extrabold", sans-serif !important;
+}
+.CF_bold {
+  font-family: "VisbyRoundCF-bold", sans-serif !important;
+}
+.CF_regular {
+  font-family: "VisbyRoundCF-regular", sans-serif !important;
+}
+p,
+h1,
+h2,
+span {
+  margin: 0;
+}
+
+.text-white {
+  color: white !important;
 }
 .default-color {
-  color: #5b5b5b !important;
+  color: #5f5f5f !important;
 }
 .header {
   font-size: 40px !important;
+}
+.extra-text {
+  font-size: 26px !important;
+}
+.large-title {
+  font-size: 24px !important;
 }
 .title {
   font-size: 20px !important;
@@ -32,7 +70,7 @@ body {
   font-size: 12px !important;
 }
 .shadow {
-  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16) !important;
+  box-shadow: 0 1.5px 3px 0px rgba(0, 0, 0, 0.16) !important;
 }
 .border-radius-sm {
   border-radius: 5px !important;
@@ -40,10 +78,81 @@ body {
 .border-radius-bg {
   border-radius: 22px !important;
 }
+.border-radius-xl {
+  border-radius: 27px !important;
+}
+.button {
+}
 ._button {
   background-color: var(--primary) !important;
   color: white !important;
 }
+._button:hover,
+._primary_button:hover {
+  background-color: var(--primary-darker) !important;
+}
+._primary_button {
+  position: relative !important;
+  min-width: 180px !important;
+  height: none !important;
+  background-color: var(--primary) !important;
+  color: white !important;
+  padding: 1rem 4rem !important;
+  font-size: 16px !important;
+}
+._primary_button.secondary {
+  background-color: var(--secondary) !important;
+}
+.bold {
+  font-weight: 900 !important;
+}
+.active-txt {
+  color: var(--primary) !important;
+}
 ._margin_horizontal {
   margin: 0 3rem !important;
+}
+._margin_horizontal_xs {
+  margin: 0 0.5rem !important;
+}
+._margin_horizontal_sm {
+  margin: 0 1rem !important;
+}
+._margin_vertical {
+  margin: 3rem 0 !important;
+}
+._margin_vertical_sm {
+  margin: 2rem 0 !important;
+}
+._margin_vertical_xs {
+  margin: 1rem 0 !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.no_margin {
+  margin: 0 !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.black-txt {
+  color: #141414 !important;
+}
+.whitespace-no-wrap {
+  white-space: nowrap !important;
+}
+.h-full {
+  height: 100vh !important;
 }

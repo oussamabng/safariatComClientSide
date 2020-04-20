@@ -1,21 +1,25 @@
 import React, { useState } from "react";
-import "./Header.css";
 import { Container, List } from "semantic-ui-react";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { ReactComponent as MiniDots } from "../../assets/icons/miniDots.svg";
 import { ReactComponent as Toggle } from "../../assets/icons/toggle.svg";
+import SearchInput from "../SearchInput/SearchInput.jsx";
+import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
+  const [isSearch, setIsSearch] = useState(false);
+  const handleSearch = () => {
+    setIsSearch((prevState) => !prevState);
+  };
   return (
-    <header className="_header_all">
+    <header className="_header_container">
       <Container>
-        <div className="_header_nav">
-          {/* logo */}
+        <div className="_header">
           <Logo className="_logo" />
-          {/* list of navs */}
           <List className="_header_list" horizontal>
             <List.Item>
-              <a href="/" className="medium-text default-color">
+              <a href="/" className="medium-text default-color active-txt">
                 Home
               </a>
             </List.Item>
@@ -31,23 +35,51 @@ const Header = () => {
             </List.Item>
             <List.Item>
               <a href="/toursNdProducts" className="medium-text default-color">
-                Tours & Products
+                Tours
               </a>
             </List.Item>
-            <List.Item>
+            <List.Item
+              className={isSearch ? "_header_right_part _header_search" : ""}
+            >
               <a href="/shop" className="medium-text default-color">
                 Shop
               </a>
             </List.Item>
-            <List.Item>
+            <List.Item
+              className={isSearch ? "_header_right_part _header_search" : ""}
+            >
               <a href="/contact" className="medium-text default-color">
                 Contact
               </a>
             </List.Item>
+            <div
+              className={
+                !isSearch
+                  ? "_header_right_part _header_search"
+                  : "no_margin flex _header_search"
+              }
+            >
+              <MiniDots className="pointer" onClick={handleSearch} />
+            </div>
           </List>
           <div className="_header_right_part">
-            <div className="_header_right_part">
-              <Search />
+            <div
+              className={
+                !isSearch
+                  ? "_header_right_part"
+                  : "_header_right_part _header_search"
+              }
+            >
+              <Search className="pointer" onClick={handleSearch} />
+            </div>
+            <div
+              className={
+                !isSearch
+                  ? "_header_right_part _header_search"
+                  : "_header_right_part"
+              }
+            >
+              <SearchInput />
             </div>
             <a
               href="/login"
@@ -56,10 +88,9 @@ const Header = () => {
               Login
             </a>
           </div>
-        </div>
-        {/* toggle div for mobile version */}
-        <div className="_header_toggle">
-          <Toggle />
+          <div className="_header_toggle">
+            <Toggle onClick={props.show} />
+          </div>
         </div>
       </Container>
     </header>

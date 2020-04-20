@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="11" viewBox="0 0 29 11">
+  <defs>
+    <filter id="Ellipse_89" x="0" y="0" width="11" height="11" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_90" x="9" y="0" width="11" height="11" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_91" x="18" y="0" width="11" height="11" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_626" data-name="Groupe 626" transform="translate(-1073 -32)">
+    <g transform="matrix(1, 0, 0, 1, 1073, 32)" filter="url(#Ellipse_89)">
+      <g id="Ellipse_89-2" data-name="Ellipse 89" transform="translate(3 3)" fill="#707070" stroke="#707070" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1073, 32)" filter="url(#Ellipse_90)">
+      <g id="Ellipse_90-2" data-name="Ellipse 90" transform="translate(12 3)" fill="#707070" stroke="#707070" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1073, 32)" filter="url(#Ellipse_91)">
+      <g id="Ellipse_91-2" data-name="Ellipse 91" transform="translate(21 3)" fill="#707070" stroke="#707070" stroke-width="1">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
