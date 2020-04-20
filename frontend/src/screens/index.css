@@ -51,6 +51,9 @@ span {
 .header {
   font-size: 40px !important;
 }
+.extra-text {
+  font-size: 26px !important;
+}
 .large-title {
   font-size: 24px !important;
 }

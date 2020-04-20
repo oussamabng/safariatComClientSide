@@ -24,10 +24,14 @@ const Recommended = () => {
   };
   return (
     <div className="_recommended">
-      <Container>
-        <div className="_recommended_list">
+      <Container
+        style={{
+          backgroundColor: "white",
+        }}
+      >
+        <div className="_recommended_list shadow">
           <div className="">
-            <p className="title">Safariatcom</p>
+            <p className="extra-text">Safariatcom</p>
             <p className="small default-color _margin_vertical_xs">
               Join our Community to display your profil, and get better
               experience
