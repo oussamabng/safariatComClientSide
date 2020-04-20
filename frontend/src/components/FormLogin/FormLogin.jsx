@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Form, Button, Divider, Message } from "semantic-ui-react";
 import RegisterSocial from "../RegisterSocial/RegisterSocial";
 import ValidationData from "../../methods/ValidationData.js";
-
 import axios from "axios";
 
 const FormLogin = () => {

@@ -7,3 +7,6 @@
 ._header_list.navigation {
   padding: 1rem 0 !important;
 }
+._header_container {
+  background: white !important;
+}

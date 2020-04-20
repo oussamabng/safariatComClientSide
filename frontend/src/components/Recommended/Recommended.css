@@ -1,0 +1,102 @@
+._recommended {
+  padding: 2rem 0 !important;
+}
+._recommended_container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+._recommended_list {
+  text-align: center;
+  padding: 2rem 4rem;
+  background: white;
+}
+._recommended_divider {
+  padding: 2rem 0;
+  border-bottom: solid 0.5px #707070;
+}
+._recommended_imgs .image {
+  height: 200px !important;
+}
+._recommended_image_hidden {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+._recommended_image_hidden.activities {
+  filter: blur(0.3px);
+  -webkit-filter: blur(0.3px);
+  width: 160px;
+  height: 120px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+._recommended_image_hidden.activities.hicking {
+  background-image: url("../../assets/hicking.png");
+}
+._recommended_image_hidden.activities.national {
+  background-image: url("../../assets/national.png");
+}
+._recommended_image_hidden.activities.international {
+  background-image: url("../../assets/international.png");
+}
+._recommended_image_hidden.activities.haj {
+  background-image: url("../../assets/haj.png");
+}
+._recommended_image_hidden.activities.summer {
+  background-image: url("../../assets/summer.png");
+}
+.recomended_hidden_items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.recomended_hidden_items.activities {
+  justify-content: center !important;
+}
+
+.recomended_hidden_items.activities > .dayz p {
+  background: transparent !important;
+}
+.recomended_hidden_items > .dayz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.recomended_hidden_items > .dayz p {
+  background: #343434;
+  padding: 0.4rem 0.75rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.recomended_hidden_items > .dayz.center p {
+  background: #343434;
+  border-radius: 5px;
+  background: white;
+  padding: 0.75rem 2rem;
+  color: black;
+}
+._recommended_imgs .reveal {
+  cursor: pointer;
+}
+._activities_items {
+  padding: 0 4rem !important;
+}
+.activities_grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

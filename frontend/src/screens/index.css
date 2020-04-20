@@ -24,6 +24,7 @@ body {
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
 }
 .CF_extrabold {
   font-family: "VisbyRoundCF-extrabold", sans-serif !important;
@@ -77,6 +78,8 @@ span {
 .border-radius-xl {
   border-radius: 27px !important;
 }
+.button {
+}
 ._button {
   background-color: var(--primary) !important;
   color: white !important;
@@ -86,10 +89,16 @@ span {
   background-color: var(--primary-darker) !important;
 }
 ._primary_button {
+  position: relative !important;
+  min-width: 180px !important;
+  height: none !important;
   background-color: var(--primary) !important;
   color: white !important;
   padding: 1rem 4rem !important;
   font-size: 16px !important;
+}
+._primary_button.secondary {
+  background-color: var(--secondary) !important;
 }
 .bold {
   font-weight: 900 !important;
@@ -102,6 +111,9 @@ span {
 }
 ._margin_horizontal_xs {
   margin: 0 0.5rem !important;
+}
+._margin_horizontal_sm {
+  margin: 0 1rem !important;
 }
 ._margin_vertical {
   margin: 3rem 0 !important;
@@ -140,4 +152,7 @@ span {
 }
 .h-full {
   height: 100vh !important;
+}
+.slick-slide {
+  width: 300px !important;
 }
