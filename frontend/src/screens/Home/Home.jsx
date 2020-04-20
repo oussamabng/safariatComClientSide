@@ -17,7 +17,9 @@ const Home = (props) => {
       {visible && <Backdrop click={handleHide} />}
       <Header show={handleHide} />
       <SidebarHeader visible={visible} />
-      <main className="_main">{props.childComponent}</main>
+      <main className={props.fullscreen ? "_main h-full" : "_main"}>
+        {props.childComponent}
+      </main>
       {props.footer && <Footer />}
     </>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 //?import components
-import FormRegister from "../../components/FormRegister/FormRegister.jsx";
+import FormLogin from "../../components/FormLogin/FormLogin.jsx";
 //*import css
 import { Container, Grid, GridRow, GridColumn } from "semantic-ui-react";
-const Register = () => {
+const Login = () => {
   return (
     <Container fluid style={{ height: "100%" }}>
       <Grid columns="equal" style={{ height: "100%" }}>
@@ -12,11 +12,11 @@ const Register = () => {
             <div className="register_cover"></div>
           </GridColumn>
           <GridColumn>
-            <FormRegister />
+            <FormLogin />
           </GridColumn>
         </GridRow>
       </Grid>
     </Container>
   );
 };
-export default Register;
+export default Login;

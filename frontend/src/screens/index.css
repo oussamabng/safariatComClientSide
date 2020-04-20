@@ -104,3 +104,6 @@ p {
 .whitespace-no-wrap {
   white-space: nowrap !important;
 }
+.h-full {
+  height: 100vh !important;
+}
