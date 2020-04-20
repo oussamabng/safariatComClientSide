@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import { Container, Button, Icon } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 import SearchInput from "../SearchInput/SearchInput.jsx";
 
 const HeroSection = () => {

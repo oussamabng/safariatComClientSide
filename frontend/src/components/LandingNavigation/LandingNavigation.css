@@ -1,0 +1,9 @@
+._landing_navigation {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer;
+}
+._header_list.navigation {
+  padding: 1rem 0 !important;
+}

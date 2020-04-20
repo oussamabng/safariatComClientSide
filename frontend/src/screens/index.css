@@ -100,6 +100,9 @@ span {
 ._margin_horizontal {
   margin: 0 3rem !important;
 }
+._margin_horizontal_xs {
+  margin: 0 0.5rem !important;
+}
 ._margin_vertical {
   margin: 3rem 0 !important;
 }

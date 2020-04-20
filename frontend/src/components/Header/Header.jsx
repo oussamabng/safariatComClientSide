@@ -35,7 +35,7 @@ const Header = (props) => {
             </List.Item>
             <List.Item>
               <a href="/toursNdProducts" className="medium-text default-color">
-                Tours & Products
+                Tours
               </a>
             </List.Item>
             <List.Item
