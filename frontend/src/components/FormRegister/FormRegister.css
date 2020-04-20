@@ -2,16 +2,6 @@
   padding-top: 50px;
   margin: 2rem 0;
 }
-._register_photo {
-}
-.register_cover {
-  background-image: url("../../assets/regitser.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
 ._register_container {
   margin: 0rem 12rem;
 }

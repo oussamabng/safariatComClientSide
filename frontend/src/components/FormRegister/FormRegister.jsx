@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import {
-  Form,
-  Button,
-  Grid,
-  GridRow,
-  GridColumn,
-  Divider,
-  Item,
-  Icon,
-  Container,
-} from "semantic-ui-react";
+import axios from "axios";
+import { Form, Button, Divider, Message } from "semantic-ui-react";
 import "./FormRegister.css";
 import ValidationData from "../../methods/ValidationData.js";
+import RegisterSocial from "../RegisterSocial/RegisterSocial";
 
 const FormRegister = () => {
+  const [success, setSuccess] = useState(null);
+
   const [username, setUsername] = useState("");
   const [usernameError, setUsernameError] = useState(null);
 
@@ -68,6 +62,21 @@ const FormRegister = () => {
     }
   };
 
+  //fetch api for regist a user
+  const RegisterUser = () => {
+    axios
+      .post("http://localhost:3000/users", {
+        username,
+        fullname,
+        email,
+        password,
+      })
+      .then((res) => {
+        console.log(res);
+        //*setSuccess(false)
+      });
+  };
+
   //function called when user submit the form
   const handleSumbit = () => {
     //initialation of errors if it gonna be the second time of submit
@@ -88,7 +97,6 @@ const FormRegister = () => {
 
     if (errors.length > 0) {
       //*there is erros
-      console.log(errors);
       errors.map((error) => {
         switch (error.id) {
           case "username":
@@ -112,77 +120,22 @@ const FormRegister = () => {
         return true;
       });
     } else {
-      //*there is no erros
-      console.log("no errors");
+      //*there is no erros => fetch api
+      //? message success
+      setSuccess(true);
+      //? post request
+      RegisterUser();
     }
   };
 
   return (
     <>
-      <div className="flex flex-col _form_register">
-        <Grid columns={1} textAlign="center">
-          <GridRow>
-            <GridColumn>
-              <p className="title black-txt">Welcome to our platform</p>
-            </GridColumn>
-          </GridRow>
-        </Grid>
-        <Container className="_margin_vertical_xs mobile" fuild>
-          <Grid columns="equal" className="_register_social">
-            <GridRow>
-              <GridColumn>
-                <div className="_register_other active pointer">
-                  <Item.Group className="_register_facebook">
-                    <Item>
-                      <Icon name="facebook f" />
-                      <Item.Content
-                        className="_padding_other"
-                        verticalAlign="middle"
-                      >
-                        <p className="small _padding_other">
-                          Sign up using Facebook
-                        </p>
-                      </Item.Content>
-                    </Item>
-                  </Item.Group>
-                </div>
-              </GridColumn>
-              <GridColumn>
-                <div className="_register_other pointer">
-                  <Item.Group className="_register_google">
-                    <Item>
-                      <Icon name="google plus g" />
-                      <Item.Content
-                        className="_padding_other"
-                        verticalAlign="middle"
-                      >
-                        <p className="small _padding_other">
-                          Sign up using Google
-                        </p>
-                      </Item.Content>
-                    </Item>
-                  </Item.Group>
-                </div>
-              </GridColumn>
-            </GridRow>
-          </Grid>
-          <div className="_register_social mobile">
-            <div className="item _register_facebook">
-              <Icon name="facebook f" />
-              <p>Login using Facebook</p>
-            </div>
-            <div className="item _register_google">
-              <Icon name="google plus g" />
-              <p className="_padding_other">Login using Google</p>
-            </div>
-          </div>
-        </Container>
-      </div>
+      <RegisterSocial type="Sign up" />
       <Divider className="_margin_vertical" horizontal>
         or
       </Divider>
       <div className="_register_container ">
-        <Form>
+        <Form success={success}>
           <Form.Input
             error={usernameError}
             fluid
@@ -227,6 +180,11 @@ const FormRegister = () => {
             value={confirmPassword}
             onChange={handleChangeInput}
             type="password"
+          />
+          <Message
+            success
+            header="Form Completed"
+            content="You're all signed up"
           />
           <div className="flex flex-col">
             <Button

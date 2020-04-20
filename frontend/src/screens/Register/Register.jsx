@@ -2,6 +2,7 @@ import React from "react";
 //?import components
 import FormRegister from "../../components/FormRegister/FormRegister.jsx";
 //*import css
+import "./Register.css";
 import { Container, Grid, GridRow, GridColumn } from "semantic-ui-react";
 const Register = () => {
   return (
