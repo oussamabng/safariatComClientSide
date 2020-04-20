@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "VisbyRoundCF-extrabold";
+  src: url("../fonts/VisbyRoundCF-ExtraBold.eot");
+}
+@font-face {
+  font-family: "VisbyRoundCF-bold";
+  src: url("../fonts/VisbyRoundCF-Bold.eot");
+}
+@font-face {
+  font-family: "VisbyRoundCF-regular";
+  src: url("../fonts/VisbyRoundCF-Regular.eot");
+}
 :root {
   --primary: #ffb808;
   --primary-darker: #f2b215;
@@ -13,8 +25,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-p {
+.CF_extrabold {
+  font-family: "VisbyRoundCF-extrabold", sans-serif !important;
+}
+.CF_bold {
+  font-family: "VisbyRoundCF-bold", sans-serif !important;
+}
+.CF_regular {
+  font-family: "VisbyRoundCF-regular", sans-serif !important;
+}
+p,
+h1,
+h2,
+span {
   margin: 0;
+}
+
+.text-white {
+  color: white !important;
 }
 .default-color {
   color: #5f5f5f !important;
@@ -45,6 +73,9 @@ p {
 }
 .border-radius-bg {
   border-radius: 22px !important;
+}
+.border-radius-xl {
+  border-radius: 27px !important;
 }
 ._button {
   background-color: var(--primary) !important;

@@ -19,6 +19,9 @@
 ._footer_navs_list.mobile {
   display: none;
 }
+._footer {
+  z-index: 20;
+}
 @media (max-width: 699px) {
   ._footer_navs_list {
     display: none !important;

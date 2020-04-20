@@ -13,7 +13,10 @@ const source = _.times(5, () => ({
   price: faker.finance.amount(0, 100, 2, "$"),
 }));
 export default class SearchInput extends Component {
-  state = initialState;
+  constructor(props) {
+    super(props);
+    this.state = initialState;
+  }
 
   handleResultSelect = (e, { result }) =>
     this.setState({ value: result.title });
@@ -36,12 +39,15 @@ export default class SearchInput extends Component {
 
   render() {
     const { isLoading, value, results } = this.state;
-
     return (
       <Grid>
         <Grid.Column width={6}>
           <Search
-            input={{ icon: "search", iconPosition: "left" }}
+            placeholder={"search"}
+            input={{
+              icon: "search",
+              iconPosition: !this.props.right ? "left" : "right",
+            }}
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
             onSearchChange={_.debounce(this.handleSearchChange, 500, {

@@ -21,7 +21,6 @@ const FormRegister = () => {
   const [passwordError, setPasswordError] = useState(null);
 
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [confirmPasswordError, setConfirmPasswordError] = useState(null);
 
   //function for changing data in inputs
   const handleChangeInput = (e) => {
@@ -52,9 +51,6 @@ const FormRegister = () => {
         setPassword(e.currentTarget.value);
         break;
       case "confirm-password":
-        if (confirmPasswordError) {
-          setConfirmPasswordError(null);
-        }
         setConfirmPassword(e.currentTarget.value);
         break;
       default:
@@ -79,12 +75,14 @@ const FormRegister = () => {
 
   //function called when user submit the form
   const handleSumbit = () => {
+    let login = false;
     //initialation of errors if it gonna be the second time of submit
     if (!usernameError) setUsernameError(null);
     if (!fullnameError) setfullnameError(null);
     if (!setEmailError) setEmailError(null);
-    if (!setPasswordError) setPasswordError(null);
-    if (!confirmPasswordError) setConfirmPasswordError(null);
+    if (!setPasswordError) {
+      setPasswordError(null);
+    }
 
     //validate inputs
     const errors = ValidationData({
@@ -93,6 +91,7 @@ const FormRegister = () => {
       email,
       password,
       confirmPassword,
+      login,
     });
 
     if (errors.length > 0) {
@@ -110,9 +109,6 @@ const FormRegister = () => {
             break;
           case "password":
             setPasswordError(error.error);
-            break;
-          case "confirm-password":
-            setConfirmPasswordError(error.error);
             break;
           default:
             break;
@@ -173,7 +169,7 @@ const FormRegister = () => {
             type="password"
           />
           <Form.Input
-            error={confirmPasswordError}
+            error={passwordError}
             fluid
             placeholder="confirm password"
             id="confirm-password"
@@ -181,15 +177,12 @@ const FormRegister = () => {
             onChange={handleChangeInput}
             type="password"
           />
-          <Message
-            success
-            header="Form Completed"
-            content="You're all signed up"
-          />
+          <Message success content="You're all signed up" />
           <div className="flex flex-col">
             <Button
               className="_margin_vertical_xs _primary_button shadow border-radius-sm pointer"
               onClick={handleSumbit}
+              type="button"
             >
               Sign up
             </Button>

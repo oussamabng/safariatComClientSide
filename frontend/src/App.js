@@ -6,12 +6,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./screens/Home/Home.jsx";
 import Register from "./screens/Register/Register.jsx";
 import Login from "./screens/Login/Login.jsx";
+import LandingPage from "./screens/LandingPage/LandingPage.jsx";
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={() => <Home footer />} />
+        <Route
+          exact
+          path="/"
+          component={() => <Home footer childComponent={<LandingPage />} />}
+        />
         <Route
           path="/register"
           component={() => <Home fullscreen childComponent={<Register />} />}

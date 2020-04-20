@@ -38,9 +38,13 @@
   border-color: var(--red) !important;
 }
 ._register_container > .ui.form > .field.error > .prompt.label {
-  background: black !important;
-  border-color: black !important;
+  background: #434343 !important;
+  border-color: #434343 !important;
   color: white !important;
+}
+._register_container > .ui.error.form > .ui.error.message {
+  border-color: var(--red) !important;
+  color: var(--red) !important;
 }
 @media (max-width: 1399px) {
   ._register_container {
