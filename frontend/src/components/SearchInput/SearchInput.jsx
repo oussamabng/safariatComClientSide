@@ -1,17 +1,11 @@
 import _ from "lodash";
-import faker from "faker";
 import React, { Component } from "react";
 import { Search, Grid } from "semantic-ui-react";
 import "./SearchInput.css";
 
 const initialState = { isLoading: false, results: [], value: "" };
 
-const source = _.times(5, () => ({
-  title: faker.company.companyName(),
-  description: faker.company.catchPhrase(),
-  image: faker.internet.avatar(),
-  price: faker.finance.amount(0, 100, 2, "$"),
-}));
+const source = [];
 export default class SearchInput extends Component {
   constructor(props) {
     super(props);

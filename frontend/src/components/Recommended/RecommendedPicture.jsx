@@ -4,11 +4,18 @@ import RecommendedImg from "../../assets/recommended.png";
 
 const RecommendedPicture = () => {
   return (
-    <Reveal animated="fade">
-      <Reveal.Content visible>
-        <Image src={RecommendedImg} size="medium" />
+    <Reveal animated="fade" style={{ width: "100%", height: "100%" }}>
+      <Reveal.Content visible style={{ width: "100%", height: "100%" }}>
+        <Image
+          src={RecommendedImg}
+          size="medium"
+          style={{ width: "100%", height: "100%" }}
+        />
       </Reveal.Content>
-      <Reveal.Content hidden>
+      <Reveal.Content
+        hidden
+        style={{ width: "100%", height: "100%", zIndex: "90" }}
+      >
         <Image
           src={RecommendedImg}
           size="medium"

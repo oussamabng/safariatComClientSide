@@ -10,17 +10,12 @@
 }
 ._recommended_list {
   text-align: center;
-  padding: 2rem 4rem;
-  background: white;
 }
 ._recommended_divider {
   padding: 2rem 0;
   border-bottom: solid 0.5px #707070;
 }
-._recommended_imgs .image {
-  height: 200px !important;
-}
-._recommended_image_hidden {
+x ._recommended_image_hidden {
   filter: blur(1px);
   -webkit-filter: blur(1px);
 }
@@ -92,6 +87,9 @@
 ._recommended_imgs .reveal {
   cursor: pointer;
 }
+._recommended_imgs {
+  margin: 0 !important;
+}
 ._activities_items {
   padding: 0 4rem !important;
 }
@@ -99,4 +97,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5rem;
+}
+/* the slides */
+.my-slider .slick-slide {
+  margin: 0 50px;
+}
+/* the parent */
+.my-slider .slick-list {
+  margin: 0 -50px;
+}
+.my-slider .slick-track {
+  height: 105px !important;
 }
