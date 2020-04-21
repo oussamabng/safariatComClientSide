@@ -1,8 +1,7 @@
 ._parteners {
   padding: 1em 0rem;
 }
-._patterns_color {
-}
+
 ._partener_img {
   width: 100px;
   height: auto;
@@ -10,6 +9,7 @@
 ._parteners .row > .column {
   text-align: center;
   padding: 1rem 0;
+  padding-top: 0 !important;
   margin: 0 3rem;
   border: 1px solid #707070;
   border-top: none;

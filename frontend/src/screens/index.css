@@ -178,10 +178,10 @@ span {
 .text-black {
   color: #000000;
 }
-.rounded {
+.slick-arrow slick-next .rounded {
   border-radius: 50%;
 }
 .slick-arrow.slick-prev,
-.slick-arrow.slick-prev {
+.slick-arrow.slick-next {
   display: none !important;
 }
