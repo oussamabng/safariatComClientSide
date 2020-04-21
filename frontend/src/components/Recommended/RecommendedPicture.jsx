@@ -38,9 +38,9 @@ const RecommendedPicture = () => {
             maxRating={5}
             disabled
           />
-          <div style={{ marginBottom: "12px", fontWeight: "bold" }}>
+          <div style={{ marginBottom: "4px", fontWeight: "bold" }}>
             <p className="text-white small ">From : 1065$</p>
-            <p className="text-white medium-text ">DUBAI</p>
+            <p className="text-white medium-text">DUBAI</p>
           </div>
         </div>
       </Reveal.Content>

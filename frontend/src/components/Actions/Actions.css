@@ -1,0 +1,30 @@
+._actions {
+  padding: 0rem 2rem;
+  background-color: white;
+}
+
+._action {
+  width: 280px;
+  height: 100px;
+}
+._action p {
+  text-align: center;
+}
+._action_grid {
+  padding-bottom: 1.5rem !important;
+}
+._action_grid > .row {
+  width: 100%;
+  border: solid 0.25px #707070;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 2rem !important;
+}
+/* the slides */
+
+@media (max-width: 1199px) {
+  ._action_grid > .row {
+    height: 110px !important;
+    padding: 0 1rem !important;
+  }
+}

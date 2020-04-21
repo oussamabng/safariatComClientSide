@@ -5,8 +5,6 @@ import { Grid, Button, Container } from "semantic-ui-react";
 import Activities from "../Activities/Activities.jsx";
 import RecommendedPicture from "./RecommendedPicture.jsx";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./Recommended.css";
 
 const Recommended = () => {
@@ -41,10 +39,10 @@ const Recommended = () => {
                 Sign up
               </Button>
             </div>
-            <p className="medium-text default-color _margin_vertical_sm">
+            <p className="medium-text black-txt  _margin_vertical_sm">
               Recommended
             </p>
-            <Grid className="_recommended_imgs" relaxed columns={3}>
+            <Grid className="_recommended_imgs" relaxed columns="equal">
               <Grid.Row style={{ width: "100%", padding: "0 50px" }}>
                 <Slider
                   {...settings}
@@ -69,7 +67,7 @@ const Recommended = () => {
                 </Slider>
               </Grid.Row>
             </Grid>
-            <p className="medium-text default-color _margin_vertical">
+            <p className="medium-text black-txt  _margin_vertical">
               Activities
             </p>
             <div className="activities_grid">

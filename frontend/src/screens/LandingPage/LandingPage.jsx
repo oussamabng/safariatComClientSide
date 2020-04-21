@@ -3,6 +3,8 @@ import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection.jsx";
 import LandingNavigation from "../../components/LandingNavigation/LandingNavigation.jsx";
 import Recommended from "../../components/Recommended/Recommended.jsx";
+import Actions from "../../components/Actions/Actions.jsx";
+import Offers from "../../components/Offers/Offers.jsx";
 
 const LandingPage = () => {
   return (
@@ -10,6 +12,8 @@ const LandingPage = () => {
       <HeroSection />
       <LandingNavigation />
       <Recommended />
+      <Actions />
+      <Offers />
     </>
   );
 };

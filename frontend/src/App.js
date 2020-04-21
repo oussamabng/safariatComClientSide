@@ -8,6 +8,9 @@ import Register from "./screens/Register/Register.jsx";
 import Login from "./screens/Login/Login.jsx";
 import LandingPage from "./screens/LandingPage/LandingPage.jsx";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const App = () => {
   return (
     <Router>
