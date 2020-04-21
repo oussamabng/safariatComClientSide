@@ -5,13 +5,13 @@ const RecommendedPicture = () => {
   return (
     <Reveal animated="fade" style={{ width: "100%", height: "100%" }}>
       <Reveal.Content
-        visible
+        className="visible"
         style={{ width: "100%", height: "100%", zIndex: "100" }}
       >
         <Image src={RecommendedImg} style={{ width: "100%", height: "100%" }} />
       </Reveal.Content>
       <Reveal.Content
-        hidden
+        className="hidden and"
         style={{ width: "100%", height: "100%", zIndex: "100" }}
       >
         <Image

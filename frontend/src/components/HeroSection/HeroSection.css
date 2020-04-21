@@ -23,14 +23,10 @@
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 10;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -44,6 +40,9 @@
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+}
+.CF_regular {
+  padding: 3rem 0;
 }
 ._hero_section_search .ui.search .prompt {
   border-radius: 5px !important;
@@ -71,9 +70,19 @@
   right: 30px !important;
   font-size: 3rem !important;
 }
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .hero-text h1 {
     font-size: 20px !important;
+  }
+  ._hero_section::before {
+    background-position: right;
+  }
+  .hero-text {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .CF_regular {
+    padding: 0 !important;
   }
   .hero-text .CF_bold,
   ._hero_section_search span {

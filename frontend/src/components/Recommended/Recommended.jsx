@@ -19,6 +19,22 @@ const Recommended = () => {
     slidesToScroll: 1,
     arrows: false,
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1001,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="_recommended">
@@ -43,7 +59,10 @@ const Recommended = () => {
               Recommended
             </p>
             <Grid className="_recommended_imgs" relaxed columns="equal">
-              <Grid.Row style={{ width: "100%", padding: "0 50px" }}>
+              <Grid.Row
+                style={{ width: "100%", padding: "0 50px" }}
+                className="_recommended_row"
+              >
                 <Slider
                   {...settings}
                   style={{ width: "100%" }}
@@ -67,7 +86,7 @@ const Recommended = () => {
                 </Slider>
               </Grid.Row>
             </Grid>
-            <p className="medium-text black-txt  _margin_vertical">
+            <p className="medium-text black-txt  _margin_vertical_sm">
               Activities
             </p>
             <div className="activities_grid">
@@ -76,6 +95,22 @@ const Recommended = () => {
               <Activities type="international" text="International City tour" />
               <Activities type="haj" text="Hajj & Omrah" />
               <Activities type="summer" text="Summer" />
+            </div>
+            <div className="activities_grid mobile">
+              <div className="flex justify-between">
+                <Activities type="hicking" text="Hicking" />
+                <Activities type="national" text="National City tour" />
+              </div>
+              <div className="flex justify-between">
+                <Activities
+                  type="international"
+                  text="International City tour"
+                />
+                <Activities type="haj" text="Hajj & Omrah" />
+              </div>
+              <div className="flex justify-between">
+                <Activities type="summer" text="Summer" />
+              </div>
             </div>
           </div>
         </div>
