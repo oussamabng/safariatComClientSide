@@ -1,20 +1,18 @@
 import React from "react";
 import { Image, Reveal, Rating } from "semantic-ui-react";
 import RecommendedImg from "../../assets/recommended.png";
-
 const RecommendedPicture = () => {
   return (
     <Reveal animated="fade" style={{ width: "100%", height: "100%" }}>
-      <Reveal.Content visible style={{ width: "100%", height: "100%" }}>
-        <Image
-          src={RecommendedImg}
-          size="medium"
-          style={{ width: "100%", height: "100%" }}
-        />
+      <Reveal.Content
+        visible
+        style={{ width: "100%", height: "100%", zIndex: "100" }}
+      >
+        <Image src={RecommendedImg} style={{ width: "100%", height: "100%" }} />
       </Reveal.Content>
       <Reveal.Content
         hidden
-        style={{ width: "100%", height: "100%", zIndex: "90" }}
+        style={{ width: "100%", height: "100%", zIndex: "100" }}
       >
         <Image
           src={RecommendedImg}

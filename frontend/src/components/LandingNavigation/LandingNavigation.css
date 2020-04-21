@@ -10,3 +10,36 @@
 ._header_container {
   background: white !important;
 }
+
+.mobile_navigation {
+  display: none;
+  transition: all 0.5s ease;
+}
+.hidde {
+  display: none;
+}
+.mobile_navigation {
+  display: none !important;
+}
+@media (max-width: 999px) {
+  .mobile_navigation {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .spec_container {
+    display: none !important;
+  }
+  ._landing_navigation {
+    margin: 0 !important;
+    padding: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  ._header_list.navigation.mobile {
+    margin: 0 10px !important;
+  }
+  ._landing_navigation .dots {
+    height: 30px !important;
+  }
+}
