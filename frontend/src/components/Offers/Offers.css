@@ -95,6 +95,7 @@
   height: 40px;
   position: absolute;
   cursor: pointer;
+  z-index: 20;
 }
 .arrow_mobile_left {
   left: 0%;
