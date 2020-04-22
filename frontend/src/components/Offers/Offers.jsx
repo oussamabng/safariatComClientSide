@@ -25,6 +25,28 @@ const Offers = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          dots: false,
+          infinite: true,
+          speed: 500,
+          autoplaySpeed: 2000,
+          autoplay: true,
+          // focusOnSelect: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          variableWidth: true,
+        },
+      },
     ],
   };
 
@@ -39,17 +61,17 @@ const Offers = () => {
     <div className="_offers">
       <Container>
         <div className="flex" style={{ paddingTop: "1rem" }}>
-          <p className="title black-txt  _margin_vertical">
+          <span className="title black-txt  _margin_vertical">
             Offers and promotions
-          </p>
+          </span>
         </div>
         <Grid className="_offers_grid w-full">
           <Grid.Row className="w-full">
-            <div className="_arrow_left pointer" onClick={previous}>
-              <Icon name="arrow left" />
+            <div className="arrow_mobile_left shadow" onClick={previous}>
+              <Icon name="arrow left" style={{ fontSize: "2rem" }} />
             </div>
-            <div className="_arrow_right pointer" onClick={next}>
-              <Icon name="arrow right" />
+            <div className="arrow_mobile_right shadow" onClick={next}>
+              <Icon name="arrow right" style={{ fontSize: "2rem" }} />
             </div>
             <Slider
               ref={(c) => setSlider(c)}
