@@ -36,7 +36,10 @@ const RecommendedPicture = () => {
             maxRating={5}
             disabled
           />
-          <div style={{ marginBottom: "4px", fontWeight: "bold" }}>
+          <div
+            style={{ marginBottom: "4px", fontWeight: "bold" }}
+            className="huh"
+          >
             <p className="text-white small ">From : 1065$</p>
             <p className="text-white medium-text">DUBAI</p>
           </div>

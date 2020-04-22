@@ -5,6 +5,7 @@ import LandingNavigation from "../../components/LandingNavigation/LandingNavigat
 import Recommended from "../../components/Recommended/Recommended.jsx";
 import Actions from "../../components/Actions/Actions.jsx";
 import Offers from "../../components/Offers/Offers.jsx";
+import PopularTour from "../../components/PopularTours/PopularTours.jsx";
 import TopRated from "../../components/TopRated/TopRated.jsx";
 import Parteners from "../../components/Parteners/Parteners.jsx";
 
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Recommended />
       <Actions />
       <Offers />
+      <PopularTour />
       <TopRated />
       <Parteners />
     </>

@@ -19,7 +19,12 @@
   --red: #d62525;
   --green: #1eb85c;
 }
-body {
+body,
+h3,
+h2,
+h1,
+p,
+span {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -34,12 +39,6 @@ body {
 }
 .CF_regular {
   font-family: "VisbyRoundCF-regular", sans-serif !important;
-}
-p,
-h1,
-h2,
-span {
-  margin: 0;
 }
 
 .text-white {
@@ -60,7 +59,7 @@ span {
 .title {
   font-size: 20px !important;
 }
-.text-black {
+.medium-text {
   font-size: 16px !important;
 }
 .small {
@@ -71,6 +70,9 @@ span {
 }
 .shadow {
   box-shadow: 0 1.5px 3px 0px rgba(0, 0, 0, 0.16) !important;
+}
+.d-none {
+  display: none !important;
 }
 .border-radius-sm {
   border-radius: 5px !important;

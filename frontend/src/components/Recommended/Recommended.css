@@ -119,6 +119,14 @@ x ._recommended_image_hidden {
 .activities_grid.mobile {
   display: none;
 }
+.huh p {
+  background-color: transparent !important;
+}
+.huh {
+  background: #343434;
+  padding: 2px;
+  text-align: center;
+}
 
 @media (max-width: 1199px) {
   ._recommended_row {

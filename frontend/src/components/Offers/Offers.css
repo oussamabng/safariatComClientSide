@@ -110,6 +110,10 @@
   margin-right: 0 !important;
   margin-top: 6px !important;
 }
+._offers_slider .slick-list,
+._offers_slider .slick-track {
+  height: 100%;
+}
 @media (max-width: 1199px) {
   ._offers_card {
     width: 250px !important;
