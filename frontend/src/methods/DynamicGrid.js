@@ -8,7 +8,8 @@ const DynamicData = (data, col) => {
       finalArr.push(newArr);
     }
     newArr.push(element);
+    return true;
   });
-  return DynamicData;
+  return finalArr;
 };
 export default DynamicData;

@@ -25,6 +25,9 @@
   margin: 0.5rem 0rem;
   font-weight: normal;
 }
+.start_grid.tablette {
+  display: none;
+}
 .start_grid.mobile {
   display: none;
 }
@@ -32,7 +35,15 @@
   .start_grid {
     display: none;
   }
+  .start_grid.tablette {
+    display: flex;
+  }
+}
+@media (max-width: 749px) {
   .start_grid.mobile {
     display: flex;
+  }
+  .start_grid.tablette {
+    display: none !important;
   }
 }

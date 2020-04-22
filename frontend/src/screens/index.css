@@ -19,12 +19,18 @@
   --red: #d62525;
   --green: #1eb85c;
 }
-body,
+
 h3,
 h2,
 h1,
 p,
 span {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -192,4 +198,7 @@ span {
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   display: none !important;
+}
+.extra_sm_padding {
+  padding: 0 0.5rem;
 }

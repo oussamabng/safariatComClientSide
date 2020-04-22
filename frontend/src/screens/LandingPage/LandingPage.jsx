@@ -8,6 +8,7 @@ import Offers from "../../components/Offers/Offers.jsx";
 import PopularTour from "../../components/PopularTours/PopularTours.jsx";
 import TopRated from "../../components/TopRated/TopRated.jsx";
 import Parteners from "../../components/Parteners/Parteners.jsx";
+import Post from "../../components/Post/Post.jsx";
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Actions />
       <Offers />
       <PopularTour />
+      <Post />
       <TopRated />
       <Parteners />
     </>
