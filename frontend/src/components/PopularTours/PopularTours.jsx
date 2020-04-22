@@ -15,6 +15,8 @@ const PopularTour = () => {
   const [dataMobile, setDataMobile] = useState([]);
   const [max, setMax] = useState(2);
   const [maxLen, setMaxLen] = useState(null);
+  const [maxLenTab, setMaxLenTab] = useState(null);
+  const [maxLenMob, setMaxLenMob] = useState(null);
 
   const handleSeeMore = () => {
     if (maxLen > max) setMax((prevState) => prevState + 1);
@@ -25,12 +27,15 @@ const PopularTour = () => {
       var pc = DynamicGrid(res.data, 3);
       var tablette = DynamicGrid(res.data, 2);
       var mobile = DynamicGrid(res.data, 1);
-      if (!maxLen) setMaxLen(res.data.length);
+      if (!maxLen) setMaxLen(pc.length);
+      if (!maxLenTab) setMaxLenTab(tablette.length);
+      if (!maxLenMob) setMaxLenMob(mobile.length);
       setData(pc.slice(0, max));
       setDataTablette(tablette.slice(0, max));
       setDataMobile(mobile.slice(0, max));
     });
-  }, [max, maxLen]);
+  }, [max, maxLen, maxLenTab, maxLenMob]);
+  console.log(max, maxLenTab, dataMobile);
 
   return (
     <div className="_parteners">
@@ -41,57 +46,92 @@ const PopularTour = () => {
           </div>
           <div className="_popular_tours_grid">
             <div className="start_grid">
-              {data.map((elment) => (
-                <div className="row">
-                  {elment.map((item) => (
-                    <div className="col">
-                      <RecommendedPicture />
-                      <h3 className="title black-txt">{item.name}</h3>
-                      <p className="small default-color">{item.description}</p>
-                    </div>
-                  ))}
+              <>
+                {data.map((elment) => (
+                  <div className="row">
+                    {elment.map((item) => (
+                      <div className="col">
+                        <RecommendedPicture />
+                        <h3 className="title black-txt">{item.name}</h3>
+                        <p className="small default-color">
+                          {item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                <div className="flex see_more">
+                  <p
+                    className={
+                      maxLen <= max
+                        ? "d-none"
+                        : "medium-text underline default-color _margin_vertical_sm pointer"
+                    }
+                    onClick={handleSeeMore}
+                  >
+                    see more
+                  </p>
                 </div>
-              ))}
+              </>
             </div>
             <div className="start_grid tablette">
-              {dataTablette.map((elment) => (
-                <div className="row">
-                  {elment.map((item) => (
-                    <div className="col">
-                      <RecommendedPicture />
-                      <h3 className="title black-txt">{item.name}</h3>
-                      <p className="small default-color">{item.description}</p>
-                    </div>
-                  ))}
+              <>
+                {dataTablette.map((elment) => (
+                  <div className="row">
+                    {elment.map((item) => (
+                      <div className="col">
+                        <RecommendedPicture />
+                        <h3 className="title black-txt">{item.name}</h3>
+                        <p className="small default-color">
+                          {item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                <div className="flex see_more_tab">
+                  <p
+                    className={
+                      maxLenTab <= max
+                        ? "d-none"
+                        : "medium-text underline default-color _margin_vertical_sm pointer"
+                    }
+                    onClick={handleSeeMore}
+                  >
+                    see more
+                  </p>
                 </div>
-              ))}
+              </>
             </div>
             <div className="start_grid mobile">
-              {dataMobile.map((elment) => (
-                <div className="row">
-                  {elment.map((item) => (
-                    <div className="col">
-                      <RecommendedPicture />
-                      <h3 className="title black-txt">{item.name}</h3>
-                      <p className="small default-color">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-              ))}
+              <>
+                {dataMobile.map((elment) => (
+                  <div className="row">
+                    {elment.map((item) => (
+                      <div className="col">
+                        <RecommendedPicture />
+                        <h3 className="title black-txt">{item.name}</h3>
+                        <p className="small default-color">
+                          {item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </>
+              <div className="flex see_more_mob">
+                <p
+                  className={
+                    maxLenMob <= max
+                      ? "d-none"
+                      : "medium-text underline default-color _margin_vertical_sm pointer"
+                  }
+                  onClick={handleSeeMore}
+                >
+                  see more
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex">
-            <p
-              className={
-                maxLen <= max
-                  ? "d-none"
-                  : "medium-text underline default-color _margin_vertical_sm pointer"
-              }
-              onClick={handleSeeMore}
-            >
-              see more
-            </p>
           </div>
         </Container>
       </div>

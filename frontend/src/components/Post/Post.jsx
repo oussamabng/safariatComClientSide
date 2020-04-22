@@ -9,7 +9,11 @@ const Post = () => {
   return (
     <div className="_main_posts">
       <Container>
-        <div className="_posts">
+        <div className="flex flex-col">
+          <div className="flex">
+            <p className="title black-txt _margin_vertical_sm">Community</p>
+          </div>
+          <PostElement />
           <PostElement />
         </div>
       </Container>

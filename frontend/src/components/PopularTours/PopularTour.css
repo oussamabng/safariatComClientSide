@@ -31,6 +31,19 @@
 .start_grid.mobile {
   display: none;
 }
+.see_more_mob {
+  display: none;
+}
+.see_more_tab {
+  display: none;
+}
+.see_more_tab,
+.see_more_mob,
+.see_more {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 @media (max-width: 999px) {
   .start_grid {
     display: none;
@@ -38,12 +51,24 @@
   .start_grid.tablette {
     display: flex;
   }
+  .see_more {
+    display: none !important;
+  }
+  .see_more_tab {
+    display: flex !important;
+  }
 }
 @media (max-width: 749px) {
   .start_grid.mobile {
     display: flex;
   }
+  .see_more_mob {
+    display: flex !important;
+  }
   .start_grid.tablette {
+    display: none !important;
+  }
+  .see_more_tab {
     display: none !important;
   }
 }
