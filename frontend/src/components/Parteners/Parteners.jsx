@@ -17,7 +17,7 @@ const Parteners = () => {
           </div>
           <Grid
             columns={4}
-            className="_padding_vertical_sm"
+            className="_padding_vertical_sm _parteners_grid"
             style={{ paddingTop: "0" }}
           >
             <Grid.Row>
@@ -35,6 +35,16 @@ const Parteners = () => {
               </Grid.Column>
             </Grid.Row>
           </Grid>
+          <div className="_parteners_mobile flex-col">
+            <div className="flex justify-evenly _padding_vertical_xs">
+              <Part1 />
+              <Part2 />
+            </div>
+            <div className="flex justify-evenly">
+              <Part3 />
+              <Part4 />
+            </div>
+          </div>
         </Container>
       </div>
     </div>

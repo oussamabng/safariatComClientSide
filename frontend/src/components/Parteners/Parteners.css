@@ -21,3 +21,15 @@
   justify-content: center !important;
   align-items: center !important;
 }
+._parteners_mobile {
+  display: none;
+}
+@media (max-width: 699px) {
+  ._parteners_mobile {
+    display: flex !important;
+    padding: 2rem;
+  }
+  ._parteners_grid {
+    display: none !important;
+  }
+}
