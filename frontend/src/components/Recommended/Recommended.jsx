@@ -76,7 +76,12 @@ const Recommended = () => {
                 <p className="medium-text black-txt  _margin_vertical_sm">
                   Recommended
                 </p>
-                <Grid className="_recommended_imgs" relaxed columns="equal">
+                <Grid
+                  stackable
+                  className="_recommended_imgs"
+                  relaxed
+                  columns="equal"
+                >
                   <Grid.Row
                     style={{ width: "100%", padding: "0 50px" }}
                     className="_recommended_row"

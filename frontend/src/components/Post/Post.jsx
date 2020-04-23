@@ -34,7 +34,7 @@ const Post = () => {
       {maxLength > max && (
         <div className="flex _margin_horizontal">
           <p
-            className="_login_button _margin_horizontal pointer  _button shadow medium-text border-radius-bg"
+            className="_login_button _margin_horizontal pointer whitespace-no-wrap  _button shadow medium-text border-radius-bg"
             onClick={handleMax}
           >
             Load more
