@@ -1,7 +1,8 @@
 import React from "react";
 import { Image, Reveal, Rating } from "semantic-ui-react";
 import RecommendedImg from "../../assets/recommended.png";
-const RecommendedPicture = () => {
+const RecommendedPicture = (props) => {
+  const { data } = props;
   return (
     <Reveal animated="fade" style={{ width: "100%", height: "100%" }}>
       <Reveal.Content
@@ -27,12 +28,12 @@ const RecommendedPicture = () => {
             className="small text-white dayz center shadow"
             style={{ marginTop: "12px" }}
           >
-            <p>10 days left</p>
+            <p>{data.time}</p>
           </div>
           <Rating
             style={{ marginTop: "12px" }}
             icon="star"
-            defaultRating={5}
+            defaultRating={data.starting}
             maxRating={5}
             disabled
           />
@@ -40,8 +41,8 @@ const RecommendedPicture = () => {
             style={{ marginBottom: "4px", fontWeight: "bold" }}
             className="huh"
           >
-            <p className="text-white small ">From : 1065$</p>
-            <p className="text-white medium-text">DUBAI</p>
+            <p className="text-white small ">From : {data.from}$</p>
+            <p className="text-white medium-text">{data.name}</p>
           </div>
         </div>
       </Reveal.Content>

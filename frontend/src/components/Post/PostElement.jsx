@@ -5,15 +5,22 @@ import HeaderPost from "./HeaderPost.jsx";
 import Imag from "../../assets/post.jpg";
 import { ReactComponent as Hea } from "../../assets/heart.svg";
 
-const PostElement = () => {
-  const [heart, setHeart] = useState(false);
+const PostElement = (props) => {
+  const { data } = props;
+  const [heart, setHeart] = useState(data.liked);
   const handleClickHeart = () => {
     setHeart((prevState) => !prevState);
   };
   return (
     <div className="_posts">
       <div className="flex flex-col _post_full">
-        <HeaderPost />
+        <HeaderPost
+          name={data.name}
+          type={data.type}
+          date={data.date}
+          followed={data.followed}
+          description={data.description}
+        />
         <Card className="_post_card">
           <Image
             src={Imag}
@@ -57,7 +64,7 @@ const PostElement = () => {
                     size="large"
                     onClick={handleClickHeart}
                   />
-                  <p className="default-color small">12k</p>
+                  <p className="default-color small">{data.numberLike}</p>
                 </div>
                 <div className="flex" style={{ marginLeft: "1rem" }}>
                   <Icon
@@ -65,7 +72,7 @@ const PostElement = () => {
                     className="icons_post default-color"
                     size="large"
                   />
-                  <p className="default-color small">250</p>
+                  <p className="default-color small">{data.numberComment}</p>
                 </div>
               </div>
               <div className="flex" style={{ marginLeft: "1rem" }}>
@@ -74,7 +81,7 @@ const PostElement = () => {
                   className="icons_post default-color"
                   size="large"
                 />
-                <p className="default-color small">98k</p>
+                <p className="default-color small">{data.numberVues}</p>
               </div>
             </div>
           </Card.Content>

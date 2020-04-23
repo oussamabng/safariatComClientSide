@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { Container, Grid, Icon, Image } from "semantic-ui-react";
-
+import axios from "axios";
 import "./TopRated.css";
 import Agency from "../../assets/top_rated.png";
 
 const TopRated = () => {
   const [slider, setSlider] = useState(null);
+  const [data, setData] = useState([]);
   //?settings of slider
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     // focusOnSelect: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     variableWidth: true,
@@ -35,6 +36,12 @@ const TopRated = () => {
     ],
   };
 
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/top_rated")
+      .then((res) => setData(res.data));
+  }, []);
+
   const next = () => {
     slider.slickNext();
   };
@@ -49,43 +56,29 @@ const TopRated = () => {
         </div>
         <Grid className="w-full grid_top_rated ">
           <Grid.Row className="w-full h-full">
-            <div className="_arrow_left pointer" onClick={previous}>
-              <Icon name="arrow left" />
-            </div>
-            <div className="_arrow_right pointer" onClick={next}>
-              <Icon name="arrow right" />
-            </div>
+            {data.length > 2 && (
+              <>
+                <div className="_arrow_left pointer" onClick={previous}>
+                  <Icon name="arrow left" />
+                </div>
+                <div className="_arrow_right pointer" onClick={next}>
+                  <Icon name="arrow right" />
+                </div>
+              </>
+            )}
             <Slider
               ref={(c) => setSlider(c)}
               {...settings}
               className="_top_rated_slider"
               style={{ width: "100%", height: "100%" }}
             >
-              <Grid.Column>
-                <div className="_top_rated_picture">
-                  <Image alt="img" src={Agency} />
-                </div>
-              </Grid.Column>{" "}
-              <Grid.Column>
-                <div className="_top_rated_picture">
-                  <Image alt="img" src={Agency} />
-                </div>
-              </Grid.Column>{" "}
-              <Grid.Column>
-                <div className="_top_rated_picture">
-                  <Image alt="img" src={Agency} />
-                </div>
-              </Grid.Column>{" "}
-              <Grid.Column>
-                <div className="_top_rated_picture">
-                  <Image alt="img" src={Agency} />
-                </div>
-              </Grid.Column>{" "}
-              <Grid.Column>
-                <div className="_top_rated_picture">
-                  <Image alt="img" src={Agency} />
-                </div>
-              </Grid.Column>{" "}
+              {data.map(() => (
+                <Grid.Column>
+                  <div className="_top_rated_picture">
+                    <Image alt="img" src={Agency} />
+                  </div>
+                </Grid.Column>
+              ))}
             </Slider>
           </Grid.Row>
         </Grid>

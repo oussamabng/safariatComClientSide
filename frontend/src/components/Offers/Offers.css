@@ -114,6 +114,13 @@
 ._offers_slider .slick-track {
   height: 100%;
 }
+.less_offers {
+  display: flex;
+  justify-content: center !important;
+}
+.less_offers .column {
+  margin: 0 1rem !important;
+}
 @media (max-width: 1199px) {
   ._offers_card {
     width: 250px !important;

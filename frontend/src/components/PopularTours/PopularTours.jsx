@@ -34,11 +34,11 @@ const PopularTour = () => {
           </div>
           <div className="_popular_tours_grid">
             <div className="start_grid">
-              <Grid stackable>
+              <Grid stackable className="flex">
                 {data.map((item, index) => (
-                  <Grid.Column mobile={16} tablet={8} computer={5}>
+                  <Grid.Column mobile={16} tablet={8} computer={5} key={index}>
                     <div className="col" key={index}>
-                      <RecommendedPicture />
+                      <RecommendedPicture data={item} />
                       <h3 className="title black-txt">{item.name}</h3>
                       <p className="small default-color">{item.description}</p>
                     </div>

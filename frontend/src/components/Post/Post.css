@@ -121,6 +121,7 @@
   #check_post {
     width: 20px !important;
     height: 20px !important;
+    cursor: pointer;
   }
   ._post_date p,
   .row.description span {
