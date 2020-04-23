@@ -176,3 +176,20 @@ x ._recommended_image_hidden {
     margin: 1rem !important;
   }
 }
+@media (max-width: 500px) {
+  .huh .text-white.small {
+    font-size: 12px !important;
+  }
+  .huh .text-white.medium-text {
+    font-size: 14px !important;
+  }
+  .huh {
+    padding: 0.25rem 0;
+  }
+  .dayz p {
+    padding: 0.25rem 0.5rem !important;
+  }
+  .recomended_hidden_items .ui.rating {
+    margin: 0 !important;
+  }
+}
