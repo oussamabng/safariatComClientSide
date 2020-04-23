@@ -19,9 +19,18 @@
   border-top: none;
   border-bottom: none;
   padding: 0 2rem !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+.less_then {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* the slides */
-
+.ui.grid > .row > .less_then > .column {
+  width: auto !important;
+}
 @media (max-width: 1199px) {
   ._action_grid > .row {
     height: 110px !important;

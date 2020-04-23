@@ -45,5 +45,45 @@
       "name": "Dubai",
       "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments"
     }
+  ],
+  "recommended": [
+    {
+      "time": "10 days left",
+      "staring": 5,
+      "from": 1060,
+      "name": "Dubai"
+    },
+    {
+      "time": "10 days left",
+      "staring": 5,
+      "from": 1060,
+      "name": "Dubai"
+    },
+    {
+      "time": "10 days left",
+      "staring": 5,
+      "from": 1060,
+      "name": "Dubai"
+    }
+  ],
+  "new_actions": [
+    {
+      "title": "Travel agency added new tour to egypt"
+    },
+    {
+      "title": "Travel agency added new tour to egypt"
+    },
+    {
+      "title": "Travel agency added new tour to egypt"
+    },
+    {
+      "title": "Travel agency added new tour to egypt"
+    },
+    {
+      "title": "Travel agency added new tour to egypt"
+    },
+    {
+      "title": "Travel agency added new tour to egypt"
+    }
   ]
 }
