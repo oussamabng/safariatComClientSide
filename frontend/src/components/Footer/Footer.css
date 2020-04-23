@@ -21,6 +21,7 @@
 }
 ._footer {
   z-index: 20;
+  background-color: white;
 }
 @media (max-width: 699px) {
   ._footer_navs_list {

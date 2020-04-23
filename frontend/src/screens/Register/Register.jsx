@@ -6,7 +6,7 @@ import "./Register.css";
 import { Container, Grid, GridRow, GridColumn } from "semantic-ui-react";
 const Register = () => {
   return (
-    <Container fluid style={{ height: "100%" }}>
+    <Container fluid style={{ height: "100vh" }}>
       <Grid columns="equal" style={{ height: "100%" }}>
         <GridRow style={{ paddingBottom: 0 }}>
           <GridColumn className="_register_photo">

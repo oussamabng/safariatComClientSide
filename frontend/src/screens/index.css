@@ -19,6 +19,17 @@
   --red: #d62525;
   --green: #1eb85c;
 }
+
+h3,
+h2,
+h1,
+p,
+span {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
@@ -34,12 +45,6 @@ body {
 }
 .CF_regular {
   font-family: "VisbyRoundCF-regular", sans-serif !important;
-}
-p,
-h1,
-h2,
-span {
-  margin: 0;
 }
 
 .text-white {
@@ -72,6 +77,9 @@ span {
 .shadow {
   box-shadow: 0 1.5px 3px 0px rgba(0, 0, 0, 0.16) !important;
 }
+.d-none {
+  display: none !important;
+}
 .border-radius-sm {
   border-radius: 5px !important;
 }
@@ -80,8 +88,6 @@ span {
 }
 .border-radius-xl {
   border-radius: 27px !important;
-}
-.button {
 }
 ._button {
   background-color: var(--primary) !important;
@@ -124,6 +130,15 @@ span {
 ._margin_vertical_sm {
   margin: 2rem 0 !important;
 }
+._padding_vertical_sm {
+  padding: 2rem 0 !important;
+}
+._padding_vertical_xs {
+  padding: 1rem 0 !important;
+}
+._padding_horizontal_sm {
+  padding: 0 2rem !important;
+}
 ._margin_vertical_xs {
   margin: 1rem 0 !important;
 }
@@ -136,7 +151,7 @@ span {
 .flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
 }
 .flex-col {
   flex-direction: column;
@@ -147,6 +162,9 @@ span {
 .underline {
   text-decoration: underline !important;
 }
+.line-through {
+  text-decoration: line-through;
+}
 .black-txt {
   color: #141414 !important;
 }
@@ -154,5 +172,33 @@ span {
   white-space: nowrap !important;
 }
 .h-full {
-  height: 100vh !important;
+  height: 100% !important;
+}
+.w-full {
+  width: 100%;
+}
+.justify-between {
+  justify-content: space-between !important;
+}
+.justify-evenly {
+  justify-content: space-evenly !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.text-black {
+  color: #000000;
+}
+.slick-arrow slick-next .rounded {
+  border-radius: 50%;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  display: none !important;
+}
+.extra_sm_padding {
+  padding: 0 0.5rem;
 }

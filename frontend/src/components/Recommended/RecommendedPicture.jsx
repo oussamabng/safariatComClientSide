@@ -1,20 +1,19 @@
 import React from "react";
 import { Image, Reveal, Rating } from "semantic-ui-react";
 import RecommendedImg from "../../assets/recommended.png";
-
-const RecommendedPicture = () => {
+const RecommendedPicture = (props) => {
+  const { data } = props;
   return (
     <Reveal animated="fade" style={{ width: "100%", height: "100%" }}>
-      <Reveal.Content visible style={{ width: "100%", height: "100%" }}>
-        <Image
-          src={RecommendedImg}
-          size="medium"
-          style={{ width: "100%", height: "100%" }}
-        />
+      <Reveal.Content
+        className="visible"
+        style={{ width: "100%", height: "100%", zIndex: "100" }}
+      >
+        <Image src={RecommendedImg} style={{ width: "100%", height: "100%" }} />
       </Reveal.Content>
       <Reveal.Content
-        hidden
-        style={{ width: "100%", height: "100%", zIndex: "90" }}
+        className="hidden and"
+        style={{ width: "100%", height: "100%", zIndex: "100" }}
       >
         <Image
           src={RecommendedImg}
@@ -29,18 +28,21 @@ const RecommendedPicture = () => {
             className="small text-white dayz center shadow"
             style={{ marginTop: "12px" }}
           >
-            <p>10 days left</p>
+            <p>{data.time}</p>
           </div>
           <Rating
             style={{ marginTop: "12px" }}
             icon="star"
-            defaultRating={5}
+            defaultRating={data.starting}
             maxRating={5}
             disabled
           />
-          <div style={{ marginBottom: "12px", fontWeight: "bold" }}>
-            <p className="text-white small ">From : 1065$</p>
-            <p className="text-white medium-text ">DUBAI</p>
+          <div
+            style={{ marginBottom: "4px", fontWeight: "bold" }}
+            className="huh"
+          >
+            <p className="text-white small ">From : {data.from}$</p>
+            <p className="text-white medium-text">{data.name}</p>
           </div>
         </div>
       </Reveal.Content>

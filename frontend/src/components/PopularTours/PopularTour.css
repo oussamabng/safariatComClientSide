@@ -1,0 +1,46 @@
+._popular_tours_grid > .start_grid > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+._popular_tours_grid > .start_grid > .row > .col {
+  margin: 0 1rem;
+  max-width: 300px;
+}
+._popular_tours_grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+._popular_tours_grid > .start_grid > .row > .col > .reveal {
+  cursor: pointer !important;
+}
+.start_grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+._popular_tours_grid > .start_grid > .row > .col h3 {
+  margin: 0.5rem 0rem;
+  font-weight: normal;
+}
+.start_grid .grid .col .ui.medium.image {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .start_grid .grid {
+    width: 400px !important;
+  }
+  .start_grid .grid .col .ui.medium.image {
+    width: 400px !important;
+  }
+}
+@media (max-width: 500px) {
+  .start_grid .grid {
+    width: 300px !important;
+  }
+  .start_grid .grid .col .ui.medium.image {
+    width: 300px !important;
+  }
+}
