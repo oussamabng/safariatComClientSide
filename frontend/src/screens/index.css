@@ -202,3 +202,6 @@ body {
 .extra_sm_padding {
   padding: 0 0.5rem;
 }
+.bg-white {
+  background: white !important;
+}
