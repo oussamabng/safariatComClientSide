@@ -1,19 +1,41 @@
 import React from "react";
-import { Image, Button, Rating, Icon, Container } from "semantic-ui-react";
-
-import "./TourCard.css";
+import {
+  Image,
+  Button,
+  Rating,
+  Icon,
+  Container,
+  Dropdown,
+} from "semantic-ui-react";
 import Img from "../../assets/recommended.png";
 
-const TourCard = (props) => {
+const ResultsTours = () => {
+  const options = [
+    { key: 1, text: "Choice 1", value: 1 },
+    { key: 2, text: "Choice 2", value: 2 },
+    { key: 3, text: "Choice 3", value: 3 },
+  ];
   return (
     <div className="flex _margin_vertical">
       <Container>
+        <div
+          className="_tour_card flex"
+          style={{
+            justifyContent: "space-between",
+          }}
+        >
+          <p className="title black-txt">Results</p>
+          <React.Fragment>
+            <Dropdown
+              placeholder="Sort by"
+              closeOnEscape
+              selection
+              options={options}
+            />{" "}
+          </React.Fragment>
+        </div>
         <div className="_tour_card">
-          {props.title && <p className="title black-txt">{props.text}</p>}
-          <div
-            className="row"
-            style={{ borderTop: `solid 3px ${props.color}`, padding: "1rem 0" }}
-          >
+          <div className="row">
             <div className="col">
               <Image src={Img} alt="img" />
               <div className="under_col">
@@ -85,4 +107,4 @@ const TourCard = (props) => {
     </div>
   );
 };
-export default TourCard;
+export default ResultsTours;

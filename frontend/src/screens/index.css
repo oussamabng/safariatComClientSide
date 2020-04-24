@@ -148,6 +148,9 @@ body {
 .no_margin {
   margin: 0 !important;
 }
+.align-start {
+  align-items: flex-start !important;
+}
 .flex {
   display: flex;
   justify-content: center;

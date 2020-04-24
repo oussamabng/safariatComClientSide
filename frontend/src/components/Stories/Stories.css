@@ -1,0 +1,26 @@
+._stories ._primary_button._offers_card_button {
+  padding: 0.5rem 1rem !important;
+  font-size: 14px !important;
+}
+._stories {
+  padding: 3rem 0;
+}
+._stories_grid > .column:hover {
+  background-color: white !important;
+  box-shadow: 0 1.5px 3px 0px rgba(0, 0, 0, 0.16) !important;
+}
+.check_story {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+}
+._stories_grid > .column:hover .check_story {
+  display: block !important;
+}
