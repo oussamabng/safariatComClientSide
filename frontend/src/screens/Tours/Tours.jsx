@@ -5,6 +5,7 @@ import SortTours from "../../components/SortTours/SortTours.jsx";
 import TourCard from "../../components/TourCard/TourCard.jsx";
 import ResultsTours from "../../components/TourCard/ResultsTours.jsx";
 import Stories from "../../components/Stories/Stories.jsx";
+import RecentTours from "../../components/RecentTours/RecentTours.jsx";
 
 const Tours = () => {
   return (
@@ -14,6 +15,7 @@ const Tours = () => {
       <TourCard title text="Top rated offer" color="#FFB808" />
       <ResultsTours />
       <Stories />
+      <RecentTours />
     </>
   );
 };

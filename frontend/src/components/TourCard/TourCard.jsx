@@ -6,7 +6,7 @@ import Img from "../../assets/recommended.png";
 
 const TourCard = (props) => {
   return (
-    <div className="flex _margin_vertical">
+    <div className="flex _margin_vertical tour_card_mobile">
       <Container>
         <div className="_tour_card">
           {props.title && <p className="title black-txt">{props.text}</p>}
@@ -17,8 +17,25 @@ const TourCard = (props) => {
             <div className="col">
               <Image src={Img} alt="img" />
               <div className="under_col">
-                <div className="flex" style={{ justifyContent: "flex-start" }}>
+                <div
+                  className="flex titre"
+                  style={{ justifyContent: "flex-start" }}
+                >
                   <p className="small">18 days left</p>
+                  <div className="flex icon_tour mobile">
+                    <Icon
+                      name="share alternate"
+                      className="pointer"
+                      size="large"
+                      style={{ margin: "0 10px" }}
+                    />{" "}
+                    <Icon
+                      name="share alternate"
+                      className="pointer"
+                      size="large"
+                      style={{ margin: "0 10px" }}
+                    />
+                  </div>
                 </div>
                 <p className="title black-txt" style={{ margin: "5px 0" }}>
                   Jijel hicking tour
@@ -64,7 +81,7 @@ const TourCard = (props) => {
                   Explore
                 </Button>
               </div>
-              <div className="flex">
+              <div className="flex icon_tour">
                 <Icon
                   name="share alternate"
                   className="pointer"
