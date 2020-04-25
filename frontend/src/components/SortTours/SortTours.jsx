@@ -13,7 +13,6 @@ const SortTours = () => {
   const handleDropDownMobile = () => {
     setIsDrodown((prevState) => !prevState);
   };
-
   return (
     <div className=" set_tours ">
       <Container>
@@ -22,20 +21,21 @@ const SortTours = () => {
             className="sort_inputs"
             size="large"
             icon="search"
-            placeholder="Search..."
+            placeholder="Destination"
           />
           <Input
             className="sort_inputs"
             size="large"
             icon="location arrow"
-            placeholder="Search..."
+            placeholder="Actual position"
           />
           <Input
             size="large"
             icon="calendar alternate outline"
-            placeholder="Search..."
+            placeholder="Date"
             className="sort_inputs"
             type="date"
+            id="date"
           />
           <Button
             loading={isLoading}
