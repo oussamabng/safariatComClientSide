@@ -1,11 +1,17 @@
 ._tour_card {
   padding: 1rem;
+}
+._tour_card.card {
+  margin-bottom: 2rem;
   background-color: white;
 }
 ._tour_card .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.flex.icon_tour.mobile {
+  display: none;
 }
 ._tour_card .col {
   display: flex;
@@ -51,6 +57,9 @@
   }
 }
 @media (max-width: 999px) {
+  .flex.icon_tour.mobile {
+    display: flex !important;
+  }
   .under_col {
     max-width: 380px !important;
   }

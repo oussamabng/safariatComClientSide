@@ -11,8 +11,8 @@ const Tours = () => {
   return (
     <>
       <SortTours />
-      <TourCard title text="Best price deal" color="#A2D9B8" />
-      <TourCard title text="Top rated offer" color="#FFB808" />
+      <TourCard title text="Best price deal" color="#A2D9B8" best={true} />
+      <TourCard title text="Top rated offer" color="#FFB808" best={false} />
       <ResultsTours />
       <Stories />
       <RecentTours />

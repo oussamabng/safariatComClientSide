@@ -257,11 +257,11 @@
     {
       "title": "Jijel hicking tour",
       "time": "10 days left",
-      "type": ["hicking", "fun"],
+      "type": ["hicking", "xD"],
       "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
       "from": 90,
-      "rate": 4,
-      "difficulty": 4
+      "rate": "4",
+      "difficulty": "4"
     }
   ],
   "tours_all": [
@@ -271,8 +271,8 @@
       "type": ["hicking", "fun"],
       "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
       "from": 90,
-      "rate": 4,
-      "difficulty": 4
+      "rate": "4",
+      "difficulty": "4"
     },
     {
       "title": "Mostaganem View tour",
@@ -280,8 +280,8 @@
       "type": ["hicking", "fun"],
       "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
       "from": 90,
-      "rate": 4,
-      "difficulty": 4
+      "rate": "4",
+      "difficulty": "4"
     }
   ]
 }
