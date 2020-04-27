@@ -7,6 +7,7 @@ import Home from "./screens/Home/Home.jsx";
 import Register from "./screens/Register/Register.jsx";
 import Login from "./screens/Login/Login.jsx";
 import LandingPage from "./screens/LandingPage/LandingPage.jsx";
+import Tours from "./screens/Tours/Tours.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +19,12 @@ const App = () => {
         <Route
           exact
           path="/"
-          component={() => <Home footer childComponent={<LandingPage />} />}
+          component={() => <Home footer active="home" childComponent={<LandingPage />} />}
+        />
+        <Route
+          
+          path="/tours"
+          component={() => <Home footer active="tours" childComponent={<Tours />} />}
         />
         <Route
           path="/register"

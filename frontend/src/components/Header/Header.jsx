@@ -9,6 +9,8 @@ import "./Header.css";
 
 const Header = (props) => {
   const [isSearch, setIsSearch] = useState(false);
+  const { active } = props; //? the active element in the navs
+
   const handleSearch = () => {
     setIsSearch((prevState) => !prevState);
   };
@@ -19,7 +21,14 @@ const Header = (props) => {
           <Logo className="_logo" />
           <List className="_header_list" horizontal>
             <List.Item>
-              <a href="/" className="medium-text default-color active-txt">
+              <a
+                href="/"
+                className={
+                  active === "home"
+                    ? "medium-text default-color active-txt"
+                    : "medium-text default-color"
+                }
+              >
                 Home
               </a>
             </List.Item>
@@ -34,7 +43,14 @@ const Header = (props) => {
               </a>
             </List.Item>
             <List.Item>
-              <a href="/toursNdProducts" className="medium-text default-color">
+              <a
+                href="/tours"
+                className={
+                  active === "tours"
+                    ? "medium-text default-color active-txt"
+                    : "medium-text default-color"
+                }
+              >
                 Tours
               </a>
             </List.Item>

@@ -241,5 +241,47 @@
       "liked": false
     }
   ],
-  "top_rated": [{}, {}, {}]
+  "top_rated": [{}, {}, {}],
+  "best_price_deal": [
+    {
+      "title": "Jijel hicking tour",
+      "time": "10 days left",
+      "type": ["hicking", "fun"],
+      "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
+      "from": 90,
+      "rate": 4,
+      "difficulty": 4
+    }
+  ],
+  "top_rated_offer": [
+    {
+      "title": "Jijel hicking tour",
+      "time": "10 days left",
+      "type": ["hicking", "xD"],
+      "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
+      "from": 90,
+      "rate": "4",
+      "difficulty": "4"
+    }
+  ],
+  "tours_all": [
+    {
+      "title": "Jijel hicking tour",
+      "time": "10 days left",
+      "type": ["hicking", "fun"],
+      "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
+      "from": 90,
+      "rate": "4",
+      "difficulty": "4"
+    },
+    {
+      "title": "Mostaganem View tour",
+      "time": "25 days left",
+      "type": ["hicking", "fun"],
+      "description": "Son agreed others exeter period myself few yet nature. Mention mr manners opinion if garrets enabled. To an occasional dissimilar impossible sentiments",
+      "from": 90,
+      "rate": "4",
+      "difficulty": "4"
+    }
+  ]
 }
