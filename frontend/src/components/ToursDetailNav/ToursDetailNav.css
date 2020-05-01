@@ -1,0 +1,93 @@
+.detail_main_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: var(--secondary);
+  z-index: 20;
+}
+.detail_main_nav > .container > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_main_nav > .container > .row .item,
+.detail_main_nav > .container > .row .active.item,
+.detail_main_nav > .container > .row .item:hover,
+.detail_main_nav > .container > .row .active.item:hover {
+  margin: 0 3rem;
+  color: white;
+  background-color: transparent !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.detail_main_nav > .container > .row .active.item {
+  color: var(--primary) !important;
+}
+.detail_main_nav > .container > .row .item:hover,
+.detail_main_nav > .container > .row .active.item:hover {
+  color: var(--primary) !important;
+}
+.tour_detail_overview {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.tour_detail_overview > .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+
+.tour_detail_overview > .col > .top_header {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5 !important;
+}
+.description_overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.description_overview > .row > h1 {
+  margin: 1rem 0;
+  font-weight: 500 !important;
+}
+.description_overview > .row {
+  width: 90%;
+  padding: 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tour_detail_overview > .col > .top_header > p,
+.tour_detail_overview > .col > ._down_info > p {
+  font-weight: 400 !important;
+}
+.tour_detail_overview > .col > .top_header > .icon {
+  color: #4acf1b !important;
+}
+.tour_detail_overview > .col > ._down_info {
+  padding: 1rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tour_detail_overview > .col > .top_header > .icon.times {
+  color: #f81f1f !important;
+}
+.tour_detail_overview > .col > ._down_info .label {
+  background-color: var(--primary) !important;
+  margin-right: 8px;
+}
+.tour_detail_overview > .col > ._down_info p {
+  margin: 1rem 0;
+  font-size: 14px !important;
+}

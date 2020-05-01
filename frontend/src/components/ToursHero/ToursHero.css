@@ -1,0 +1,104 @@
+._tours_hero {
+  width: 100vw;
+  height: 100vh;
+}
+._tours_hero .grid {
+  height: 100% !important;
+}
+._tours_hero > .grid > .row > .hero {
+  background-image: url("../../assets/tours_hero.svg");
+  background-position: left;
+  background-size: cover;
+  height: 100% !important;
+}
+
+._tours_hero > .grid > .row > .column.info_hero {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100% !important;
+}
+._tours_hero > .grid > .row {
+  height: 100% !important;
+  padding-bottom: 0;
+}
+._tours_hero > .grid > .row > .info_hero ._header_info_tour_hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._header_info_tour_hero > .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+._header_info_tour_hero > .col > .text_part {
+  margin: 1rem 0;
+}
+._header_info_tour_hero > .col > .image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+._tours_hero > .grid > .row > .info_hero ._header_info_tour_hero.center {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  width: 100%;
+  justify-content: flex-start;
+  height: 100% !important;
+}
+._tours_hero > .grid > .row > .info_hero ._header_info_tour_hero.center > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+._tours_hero
+  > .grid
+  > .row
+  > .info_hero
+  ._header_info_tour_hero.center
+  > p
+  > b {
+  margin-left: 8px;
+}
+._tours_book_btn.button {
+  margin: 1.4rem;
+  background-color: var(--primary);
+  color: white;
+  min-width: 160px;
+  padding: 1rem 0.2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+._tours_book_btn.button:hover {
+  background-color: var(--primary-darker);
+  color: white;
+}
+._header_info_tour_hero.center .ui.striped.table tbody tr:nth-child(2n + 1),
+._header_info_tour_hero.center .ui.striped.table > tr:nth-child(2n + 1) {
+  background-color: #f6f6f6;
+}
+._header_info_tour_hero.center .ui.striped.table,
+._header_info_tour_hero.center .ui.striped.table td {
+  border: none;
+}
+._header_info_tour_hero.center .ui.striped.table ._diff,
+._header_info_tour_hero.center .ui.striped.table .flex {
+  justify-content: flex-end;
+}
+._header_info_tour_hero.center .ui.striped.table ._diff p,
+._header_info_tour_hero.center .ui.striped.table .flex {
+  margin-right: 5px;
+}
+.icon_tour_guid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_tour_guid svg {
+  margin: 0 1rem;
+  cursor: pointer;
+}

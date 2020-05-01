@@ -16,7 +16,10 @@ const SortTours = () => {
   return (
     <div className=" set_tours ">
       <Container>
-        <div className="_header" style={{ padding: "2rem 3rem" }}>
+        <div
+          className="_header"
+          style={{ padding: "2rem 3rem", paddingTop: "3rem" }}
+        >
           <Input
             className="sort_inputs"
             size="large"
