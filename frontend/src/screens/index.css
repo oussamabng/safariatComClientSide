@@ -80,6 +80,15 @@ body {
 .d-none {
   display: none !important;
 }
+.border-none {
+  border: none !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.border-radius-none {
+  border-radius: 0 !important;
+}
 .border-radius-sm {
   border-radius: 5px !important;
 }

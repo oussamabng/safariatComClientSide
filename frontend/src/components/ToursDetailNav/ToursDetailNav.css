@@ -31,7 +31,6 @@
 .tour_detail_overview {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
 }
 .tour_detail_overview > .col {
   display: flex;
@@ -90,4 +89,80 @@
 .tour_detail_overview > .col > ._down_info p {
   margin: 1rem 0;
   font-size: 14px !important;
+}
+.tour_detail_iten > .col {
+  display: flex;
+  flex-direction: column;
+}
+.tour_detail_iten > .col > .accordion {
+  border-radius: 5px;
+}
+.tour_detail_iten > .col > .accordion > .title {
+  color: #a1a1a1;
+  font-family: "Montserrat", sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour_detail_iten > .col > .accordion > .title:hover {
+  color: var(--primary);
+}
+.tour_detail_iten > .col > .accordion > .title:hover .number_accordion {
+  border: 1px solid var(--primary);
+}
+.tour_detail_iten > .col > .accordion > .title:hover .number_accordion p {
+  color: var(--primary);
+}
+.tour_detail_iten > .col > .accordion > .title.active {
+  color: var(--primary);
+  padding-bottom: 0 !important;
+}
+.tour_detail_iten > .col > .accordion > .title svg {
+  width: 35px;
+  height: 35px;
+  transform: rotate(-90deg);
+  transition: transform ease-in 0.1s;
+}
+.tour_detail_iten > .col > .accordion > .title.active svg {
+  transform: rotate(0deg);
+  transition: transform ease-in 0.1s;
+}
+.tour_detail_iten > .col > .accordion > .title svg > path {
+  fill: #a1a1a1 !important;
+}
+.tour_detail_iten > .col > .accordion > .title:hover svg > path {
+  fill: var(--primary) !important;
+}
+.tour_detail_iten > .col > .accordion > .title.active svg > path {
+  fill: var(--primary) !important;
+}
+.tour_detail_iten > .col > .accordion > .title.active .number_accordion {
+  border: 1px solid var(--primary);
+}
+.tour_detail_iten > .col > .accordion > .title.active .number_accordion p {
+  color: var(--primary);
+}
+
+.tour_detail_iten > .col > .accordion > .title .number_accordion {
+  border: 1px solid #a1a1a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.tour_detail_iten > .col > .accordion > .title > .number_accordion:hover {
+  color: var(--primary);
+}
+.tour_detail_iten > .col > .accordion > .title > .number_accordion p {
+  color: #a1a1a1;
+}
+.tour_detail_iten > .col > .accordion > .content {
+  padding: 0 3rem;
+  margin: 0 2rem;
+}
+.tour_detail_iten > .col > .accordion > .content > p {
+  color: #a1a1a1;
+  font-family: "Montserrat", sans-serif !important;
+  padding: 1rem 0;
+  border-top: 0.5px solid #707070;
 }

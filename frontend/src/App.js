@@ -20,23 +20,31 @@ const App = () => {
         <Route
           exact
           path="/"
-          component={() => <Home footer active="home" childComponent={<LandingPage />} />}
+          component={() => (
+            <Home footer active="home" childComponent={<LandingPage />} />
+          )}
         />
         <Route
           exact
           path="/tours"
-          component={() => <Home footer active="tours" childComponent={<Tours />} />}
+          component={() => (
+            <Home footer active="tours" childComponent={<Tours />} />
+          )}
         />
-         <Route
+        <Route
           exact
           path="/tours/details"
-          component={() => <Home footer active="tours" childComponent={<ToursDetails />} />}
+          component={() => (
+            <Home footer active="tours" childComponent={<ToursDetails />} />
+          )}
         />
-        <Route exact
+        <Route
+          exact
           path="/register"
           component={() => <Home fullscreen childComponent={<Register />} />}
         />
-        <Route exact
+        <Route
+          exact
           path="/login"
           component={() => <Home fullscreen childComponent={<Login />} />}
         />

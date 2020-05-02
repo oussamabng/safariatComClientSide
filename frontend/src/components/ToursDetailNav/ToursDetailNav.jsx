@@ -4,6 +4,7 @@ import { Container, Menu } from "semantic-ui-react";
 //? import css
 import "./ToursDetailNav.css";
 import TourOverView from "./TourOverView.jsx";
+import TourItinerery from "./TourItinerery.jsx";
 
 const ToursDetailNav = () => {
   const [activeItem, setActiveItem] = useState("Overview");
@@ -44,6 +45,7 @@ const ToursDetailNav = () => {
         </Container>
       </div>
       {activeItem === "Overview" && <TourOverView />}
+      {activeItem === "Itinerary" && <TourItinerery />}
     </>
   );
 };
