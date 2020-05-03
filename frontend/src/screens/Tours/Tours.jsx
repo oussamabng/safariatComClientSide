@@ -13,7 +13,7 @@ const Tours = () => {
       <SortTours />
       <TourCard title text="Best price deal" color="#A2D9B8" best={true} />
       <TourCard title text="Top rated offer" color="#FFB808" best={false} />
-      <ResultsTours />
+      <ResultsTours title="Results" />
       <Stories />
       <RecentTours />
     </>

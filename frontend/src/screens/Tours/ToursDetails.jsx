@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 import SortTours from "../../components/SortTours/SortTours.jsx";
 import ToursHero from "../../components/ToursHero/ToursHero.jsx";
 import ToursDetailNav from "../../components/ToursDetailNav/ToursDetailNav.jsx";
+import ResultsTours from "../../components/TourCard/ResultsTours.jsx";
+import RecentTours from "../../components/RecentTours/RecentTours.jsx";
+
 import { Segment } from "semantic-ui-react";
 const ToursDetails = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +27,8 @@ const ToursDetails = () => {
       <SortTours />
       <ToursHero />
       <ToursDetailNav />
+      <ResultsTours title="Tours Matching search" />
+      <RecentTours />
     </Segment>
   );
 };
