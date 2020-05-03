@@ -107,12 +107,11 @@ const ToursDetailNav = () => {
                   />
                 </div>
               </Menu>
-              <div className="flex" style={{ padding: ".5rem" }}>
+              <div className="flex" style={{ padding: ".2rem" }}>
                 <Icon
                   onClick={handleClick}
                   name="angle double up"
-                  size="big"
-                  className="pointer"
+                  className="pointer _margin_vertical_xs"
                   style={{
                     color: "white",
                   }}

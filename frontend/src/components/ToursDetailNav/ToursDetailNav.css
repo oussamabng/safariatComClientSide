@@ -243,3 +243,17 @@
 .gallery {
   margin: 2rem 0;
 }
+@media (max-width: 999px) {
+  .tour_detail_overview.tour_accmodotion > .col {
+    width: 100% !important;
+  }
+  .tour_detail_overview.tour_accmodotion > .col.second {
+    margin: 0 !important;
+  }
+  .tour_detail_overview.tour_accmodotion > .col {
+    margin-bottom: 1rem !important;
+  }
+  ._tour_shots.gallery .grid {
+    padding: 3rem !important;
+  }
+}

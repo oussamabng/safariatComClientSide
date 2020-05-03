@@ -108,6 +108,7 @@
   ._tours_hero > .grid > .row > .column {
     width: 100%;
   }
+
   ._tours_hero > .grid > .row > .hero {
     height: 300px !important;
     background-position: center;
