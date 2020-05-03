@@ -5,6 +5,7 @@
   height: 80px;
   background-color: var(--secondary);
   z-index: 20;
+  position: relative;
 }
 .detail_main_nav > .container > .row {
   display: flex;

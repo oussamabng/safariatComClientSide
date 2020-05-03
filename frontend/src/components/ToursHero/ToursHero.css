@@ -1,6 +1,5 @@
 ._tours_hero {
-  width: 100vw;
-  height: 100vh;
+  height: 120vh;
 }
 ._tours_hero .grid {
   height: 100% !important;
@@ -101,4 +100,138 @@
 .icon_tour_guid svg {
   margin: 0 1rem;
   cursor: pointer;
+}
+.detail_main_nav_mobile {
+  display: none;
+}
+@media (max-width: 999px) {
+  ._tours_hero > .grid > .row > .column {
+    width: 100%;
+  }
+  ._tours_hero > .grid > .row > .hero {
+    height: 300px !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .detail_main_nav > .container {
+    display: none !important;
+  }
+  .detail_main_nav_mobile {
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary);
+    margin: 3rem 0 !important;
+  }
+  .detail_main_nav_mobile ._tour_detail_nav {
+    width: 100%;
+    justify-content: space-between !important;
+    display: flex !important;
+    align-items: center;
+    margin: 0 !important;
+  }
+  .dots_tour_detail {
+    margin-left: auto;
+    color: white !important;
+  }
+  .detail_main_nav_mobile ._tour_detail_nav .item {
+    color: white !important;
+    background: transparent !important;
+    font-size: 16px !important;
+  }
+  .detail_main_nav_mobile ._tour_detail_nav .item.active {
+    color: var(--primary) !important;
+  }
+  .detail_main_nav_mobile ._tour_detail_nav .item:hover {
+    color: var(--primary) !important;
+  }
+  .detail_main_nav_mobile .ouf {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .detail_main_nav_mobile .ouf > .menu {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .detail_main_nav_mobile .ouf > .menu:last-child {
+    margin-left: auto !important;
+  }
+  .detail_main_nav_mobile .accordion {
+    width: 100%;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  ._tour_detail_nav.mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  ._tour_detail_nav.mobile > .row_mob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  ._tour_detail_nav.mobile > .row_mob.center {
+    justify-content: center;
+    align-items: center;
+  }
+  ._tours_hero > .grid > .row > .info_hero ._header_info_tour_hero.center {
+    padding: 0 !important;
+  }
+  ._tours_hero {
+    height: auto !important;
+  }
+  .tour_detail_overview {
+    padding: 2rem 0;
+  }
+  ._tours_hero {
+    padding-top: 0 !important;
+  }
+  ._header_info_tour_hero.center .table tr {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .tour_detail_overview {
+    padding: 2rem;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  ._down_info {
+    text-align: center !important;
+    padding: 1rem !important;
+  }
+  ._down_info > p {
+    font-size: 12px !important;
+  }
+  .top_header h1 {
+    font-size: 16px !important;
+  }
+  .description_overview > .row {
+    padding: 0.8rem 1.5rem !important;
+  }
+  .detail_main_nav {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 499px) {
+  ._tours_hero > .grid > .row > .hero {
+    background-size: cover;
+    height: 200px !important;
+  }
+  .col > ._tour_shots > .col_img {
+    height: auto !important;
+  }
+  .col > ._tour_shots > .col_img > .image {
+    height: auto !important;
+  }
+  .tour_detail_iten > .col > .accordion {
+    width: 320px !important;
+  }
+  .col_multiple_img .column {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
