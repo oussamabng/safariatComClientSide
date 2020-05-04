@@ -10,6 +10,7 @@ import LandingPage from "./screens/LandingPage/LandingPage.jsx";
 import Tours from "./screens/Tours/Tours.jsx";
 import ToursDetails from "./screens/Tours/ToursDetails.jsx";
 import Shop from "./screens/Shop/Shop.jsx";
+import ShopDetail from "./screens/ShopDetail/ShopDetail.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,6 +38,13 @@ const App = () => {
           path="/shop"
           component={() => (
             <Home footer active="shop" childComponent={<Shop />} />
+          )}
+        />
+        <Route
+          exact
+          path="/shop/detail"
+          component={() => (
+            <Home footer active="shop" childComponent={<ShopDetail />} />
           )}
         />
         <Route
