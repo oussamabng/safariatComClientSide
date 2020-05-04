@@ -24,7 +24,7 @@ const ToursDetails = () => {
       }}
       loading={isLoading}
     >
-      <SortTours />
+      <SortTours date dropdown />
       <ToursHero />
       <ToursDetailNav />
       <ResultsTours title="Tours Matching search" />

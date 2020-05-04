@@ -21,6 +21,9 @@
   justify-content: space-between;
   align-items: center;
 }
+._header_list > .item > a:hover {
+  color: var(--primary) !important;
+}
 ._header_list > .item {
   margin: auto 30px !important;
 }

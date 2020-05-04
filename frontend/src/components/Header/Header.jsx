@@ -57,7 +57,14 @@ const Header = (props) => {
             <List.Item
               className={isSearch ? "_header_right_part _header_search" : ""}
             >
-              <a href="/shop" className="medium-text default-color">
+              <a
+                href="/shop"
+                className={
+                  active === "shop"
+                    ? "medium-text default-color active-txt"
+                    : "medium-text default-color"
+                }
+              >
                 Shop
               </a>
             </List.Item>

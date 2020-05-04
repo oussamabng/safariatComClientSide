@@ -10,7 +10,7 @@ import RecentTours from "../../components/RecentTours/RecentTours.jsx";
 const Tours = () => {
   return (
     <>
-      <SortTours />
+      <SortTours date dropdown />
       <TourCard title text="Best price deal" color="#A2D9B8" best={true} />
       <TourCard title text="Top rated offer" color="#FFB808" best={false} />
       <ResultsTours title="Results" />
