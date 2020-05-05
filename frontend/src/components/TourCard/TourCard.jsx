@@ -5,6 +5,8 @@ import axios from "axios";
 import "./TourCard.css";
 import Img from "../../assets/recommended.png";
 
+import { Link } from "react-router-dom";
+
 const TourCard = (props) => {
   const { best } = props;
   const [rate, setRate] = useState("");
@@ -100,9 +102,13 @@ const TourCard = (props) => {
             <div className="under_col center">
               <p className="black-txt large-title">From : {from} $</p>
               <div className="flex _margin_vertical_xs">
-                <Button className="_primary_button _offers_card_button">
-                  Explore
-                </Button>
+                <Link to="/tours/details">
+                  {" "}
+                  <Button className="_primary_button _offers_card_button">
+                    {" "}
+                    Explore{" "}
+                  </Button>
+                </Link>
               </div>
               <div className="flex icon_tour ">
                 <Icon

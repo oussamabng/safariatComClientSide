@@ -10,7 +10,7 @@ import {
 import Img from "../../assets/recommended.png";
 import axios from "axios";
 
-const ResultsTours = () => {
+const ResultsTours = (props) => {
   const options = [
     { key: 1, text: "Choice 1", value: 1 },
     { key: 2, text: "Choice 2", value: 2 },
@@ -33,7 +33,7 @@ const ResultsTours = () => {
             justifyContent: "space-between",
           }}
         >
-          <p className="title black-txt">Results</p>
+          <p className="title black-txt">{props.title}</p>
           <React.Fragment>
             <Dropdown
               placeholder="Sort by"
@@ -118,6 +118,9 @@ const ResultsTours = () => {
             </div>
           </div>
         ))}
+        <div className="load_more_btn ">
+          <Button className="">Load more</Button>
+        </div>
       </Container>
     </div>
   );

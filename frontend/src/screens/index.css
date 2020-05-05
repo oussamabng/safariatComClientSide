@@ -80,6 +80,15 @@ body {
 .d-none {
   display: none !important;
 }
+.border-none {
+  border: none !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.border-radius-none {
+  border-radius: 0 !important;
+}
 .border-radius-sm {
   border-radius: 5px !important;
 }
@@ -90,6 +99,15 @@ body {
   border-radius: 27px !important;
 }
 ._button {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+._button_inverted {
+  background-color: white !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+._button_inverted:hover {
   background-color: var(--primary) !important;
   color: white !important;
 }

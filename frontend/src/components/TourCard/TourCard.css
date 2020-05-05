@@ -106,3 +106,17 @@
     padding: 1.5rem;
   }
 }
+.load_more_btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.load_more_btn .button {
+  width: 75%;
+  padding: 1.3rem 1rem !important;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 1px solid #707070;
+}
