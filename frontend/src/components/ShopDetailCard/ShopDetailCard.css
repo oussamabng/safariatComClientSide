@@ -55,3 +55,56 @@
   min-width: 160px;
   min-height: 50px;
 }
+@media (max-width: 1199px) {
+  .full_card_detail_shop .grid .col .image {
+    max-width: 353.535px;
+    max-height: 444px;
+  }
+  .full_card_detail_shop .grid .col {
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center;
+  }
+}
+@media (max-width: 799px) {
+  .full_card_detail_shop .grid {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    align-items: center;
+  }
+  .full_card_detail_shop .grid .column {
+    width: 100% !important;
+  }
+  .full_card_detail_shop .grid .col_detail {
+    padding: 2rem 0 !important;
+  }
+  .full_card_detail_shop .grid .col .image {
+    height: 350px;
+  }
+}
+@media (max-width: 463px) {
+  .row_shop_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .full_card_detail_shop .grid .row_shop_detail .ui.dropdown {
+    margin: 0.6rem 0;
+  }
+  .full_card_detail_shop .grid .row_shop_detail {
+    margin: 0rem 0rem;
+  }
+  .full_card_detail_shop .grid .row_shop_detail ._button {
+    margin: 0.6rem 0;
+  }
+  .shop_detail_card {
+    padding: 0.5rem;
+  }
+  .shop_detail_card h1 {
+    margin: 1rem 0 !important;
+  }
+  .shop_detail_card p {
+    margin: 0.5rem 0 !important;
+  }
+}

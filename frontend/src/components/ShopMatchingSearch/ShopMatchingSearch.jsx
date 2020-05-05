@@ -15,6 +15,7 @@ const ShopMatchingSearch = () => {
         style={{
           color: "#4E4E4E",
           fontWeight: "500",
+          marginLeft: "8px",
         }}
       >
         Products Matching search
