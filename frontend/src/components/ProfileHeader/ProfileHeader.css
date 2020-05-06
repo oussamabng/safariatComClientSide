@@ -1,0 +1,58 @@
+._profile_cover_img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height: 360px;
+  position: relative;
+}
+._profile_cover_img > ._profile_image > .image {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(10%, 40%);
+  z-index: 10;
+}
+.profile_image {
+  margin-right: 0 !important;
+}
+._profile_nav {
+  font-family: "Montserrat", sans-serif !important;
+  padding-left: 18% !important;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+._profile_nav > ._profile_fullname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+._profile_header_options ._profile_badge {
+  background-color: white;
+  margin: 0 1.5rem;
+  border-radius: 25px;
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.16) !important;
+}
+._profile_header_options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._profile_header_options ._profile_badge p {
+  font-size: 14px !important;
+  margin: 0 2px !important;
+  font-weight: 500;
+}
+._profile_header_options ._profile_badge .act {
+  color: var(--primary) !important;
+}

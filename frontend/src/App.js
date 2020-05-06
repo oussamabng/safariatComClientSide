@@ -11,6 +11,7 @@ import Tours from "./screens/Tours/Tours.jsx";
 import ToursDetails from "./screens/Tours/ToursDetails.jsx";
 import Shop from "./screens/Shop/Shop.jsx";
 import ShopDetail from "./screens/ShopDetail/ShopDetail.jsx";
+import Profile from "./screens/Profile/Profile.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,6 +25,13 @@ const App = () => {
           path="/"
           component={() => (
             <Home footer active="home" childComponent={<LandingPage />} />
+          )}
+        />
+        <Route
+          exact
+          path="/profile"
+          component={() => (
+            <Home logged footer active="home" childComponent={<Profile />} />
           )}
         />
         <Route

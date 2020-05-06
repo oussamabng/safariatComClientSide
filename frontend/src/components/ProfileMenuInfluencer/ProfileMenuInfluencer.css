@@ -1,0 +1,104 @@
+._profile_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Montserrat", sans-serif !important;
+  padding: 1rem 0;
+}
+._profile_menu .ui.secondary.pointing.menu {
+  border: none !important;
+}
+._profile_menu .ui.secondary.pointing.menu .item {
+  font-size: 16px !important;
+  color: #4e4e4e !important;
+  padding: 0.5rem 0.25rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+._profile_menu .ui.secondary.pointing.menu .active.item {
+  border-color: var(--primary);
+}
+._profile_inf_about > .grid > .column > .col {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+._profile_inf_about > .grid > .column > .col > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._profile_inf_about > .grid > .column > .col h3 {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+._profile_inf_about > .grid > .column > .col > .row {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+._profile_inf_about.overview > .grid > .column > .col.first {
+  min-height: 235px !important;
+  background-color: white;
+  transition: height 0.2s ease-in;
+}
+._profile_inf_about.overview > .grid > .column > .col.first.paragraph {
+  min-height: 300px !important;
+  transition: height 0.2s ease-in;
+}
+._profile_slider_menu .image {
+  width: 130px;
+  height: 100px;
+}
+._profile_slider_menu .slick-list {
+  height: 130px !important;
+}
+._profile_slider_menu {
+  width: 80% !important;
+}
+.slider-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+/* the slides */
+._profile_slider_menu .slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+._profile_slider_menu .slick-list {
+  margin: 0 -10px;
+}
+._profile_inf_about.overview .left_i {
+  position: absolute;
+  left: 6%;
+  top: 45%;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+._profile_inf_about.overview .icon {
+  margin: 0 !important;
+  height: auto !important;
+}
+._profile_inf_about.overview .right_i {
+  position: absolute;
+  right: 6%;
+  top: 45%;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}

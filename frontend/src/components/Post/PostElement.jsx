@@ -1,18 +1,32 @@
 import React, { useState } from "react";
-import { Card, Image, Icon, Transition } from "semantic-ui-react";
+import {
+  Card,
+  Image,
+  Icon,
+  Transition,
+  Dimmer,
+  Segment,
+} from "semantic-ui-react";
 
 import HeaderPost from "./HeaderPost.jsx";
+import PostComments from "./PostComments.jsx";
+
 import Imag from "../../assets/post.jpg";
 import { ReactComponent as Hea } from "../../assets/heart.svg";
 
 const PostElement = (props) => {
   const { data } = props;
   const [heart, setHeart] = useState(data.liked);
+  const [commentsShow, setComments] = useState(false);
+  const handleComments = () => {
+    setComments((prevState) => !prevState);
+  };
   const handleClickHeart = () => {
     setHeart((prevState) => !prevState);
   };
   return (
-    <div className="_posts">
+    <Segment className={commentsShow ? "_posts show" : "_posts"}>
+      <Dimmer active={commentsShow} onClick={handleComments} />
       <div className="flex flex-col _post_full">
         <HeaderPost
           name={data.name}
@@ -29,6 +43,7 @@ const PostElement = (props) => {
             onDoubleClick={handleClickHeart}
             className="img_post"
           />
+
           <Transition
             visible={heart}
             animation="pulse"
@@ -40,8 +55,8 @@ const PostElement = (props) => {
               style={{ height: "50px" }}
             />
           </Transition>
-          <Card.Content>
-            <div className="flex justify-between">
+          <Card.Content className={commentsShow ? "shown" : ""}>
+            <div className={false ? "hidde" : "flex justify-between"}>
               <div className="flex justify-between">
                 <div className="flex">
                   <Icon
@@ -66,13 +81,19 @@ const PostElement = (props) => {
                   />
                   <p className="default-color small">{data.numberLike}</p>
                 </div>
-                <div className="flex" style={{ marginLeft: "1rem" }}>
+                <div
+                  className="flex pointer"
+                  style={{ marginLeft: "1rem" }}
+                  onClick={handleComments}
+                >
                   <Icon
                     name="comment outline"
                     className="icons_post default-color"
                     size="large"
                   />
-                  <p className="default-color small">{data.numberComment}</p>
+                  <p className="default-color small pointer">
+                    {data.numberComment}
+                  </p>
                 </div>
               </div>
               <div className="flex" style={{ marginLeft: "1rem" }}>
@@ -84,10 +105,11 @@ const PostElement = (props) => {
                 <p className="default-color small">{data.numberVues}</p>
               </div>
             </div>
+            {commentsShow && <PostComments />}
           </Card.Content>
         </Card>
       </div>
-    </div>
+    </Segment>
   );
 };
 export default PostElement;

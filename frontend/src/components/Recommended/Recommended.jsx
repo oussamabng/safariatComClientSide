@@ -93,7 +93,6 @@ const Recommended = () => {
                         className="my-slider"
                       >
                         {data.map((element, index) => {
-                          console.log(element);
                           return (
                             <Grid.Column key={index}>
                               <Reveal

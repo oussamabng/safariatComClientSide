@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, List } from "semantic-ui-react";
+import { Container, List, Image } from "semantic-ui-react";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as MiniDots } from "../../assets/icons/miniDots.svg";
@@ -7,10 +7,11 @@ import { ReactComponent as Toggle } from "../../assets/icons/toggle.svg";
 import SearchInput from "../SearchInput/SearchInput.jsx";
 import "./Header.css";
 
+import Alex from "../../assets/alex.jpg";
+
 const Header = (props) => {
   const [isSearch, setIsSearch] = useState(false);
-  const { active } = props; //? the active element in the navs
-
+  const { active, logged } = props; //? the active element in the navs
   const handleSearch = () => {
     setIsSearch((prevState) => !prevState);
   };
@@ -106,10 +107,15 @@ const Header = (props) => {
             </div>
             <a
               href="/login"
-              className="_login_button _margin_horizontal  _button shadow medium-text border-radius-bg"
+              className={
+                logged
+                  ? "hidde"
+                  : "_login_button _margin_horizontal  _button shadow medium-text border-radius-bg"
+              }
             >
               Login
             </a>
+            {logged && <Image src={Alex} className="profile_image shadow" />}
           </div>
           <div className="_header_toggle">
             <Toggle onClick={props.show} />

@@ -10,6 +10,13 @@
   align-items: center;
   position: relative;
 }
+.profile_image {
+  width: 54px;
+  height: 54px;
+  margin: 0 2rem;
+  border-radius: 50%;
+  background-color: white;
+}
 ._header {
   display: flex;
   align-items: center;
